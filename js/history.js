@@ -23,7 +23,7 @@ const FIRST_WEEKLY = "2019-01-01";  // AHDB weekly prices by grade start in the 
 const DEFAULTS = {
   type: "finished", stock: "Steers", calfStock: "Bull calves", region: "England and Wales",
   grades: ["R4L", "O+4L"], measure: "average_gbp_per_head", range: "5", from: "", to: "",
-  seasonGrade: "R4L", periodStart: 3, periodEnd: 5,
+  seasonGrade: "R4L", periodStart: 3, periodEnd: 5, allYears: "no",
 };
 
 const data = { weekly: [], monthly: [], store: [], calves: [], sources: [] };
@@ -51,6 +51,7 @@ function restoreState() {
   if (GRADES.some(g => g.code === s.seasonGrade)) st.seasonGrade = s.seasonGrade;
   if (s.periodStart >= 1 && s.periodStart <= 12) st.periodStart = Number(s.periodStart);
   if (s.periodEnd >= 1 && s.periodEnd <= 12) st.periodEnd = Number(s.periodEnd);
+  if (["no", "yes"].includes(s.allYears)) st.allYears = s.allYears;
   return st;
 }
 
@@ -356,15 +357,16 @@ function drawSeasonal() {
   unavailable.hidden = true;
   content.hidden = false;
 
-  // 1. One line per year, January to December.
+  // 1. This year against last year, January to December (earlier years only if asked for).
   const latestYear = yearList[yearList.length - 1];
+  const shownYears = state.allYears === "yes" ? yearList : yearList.filter(y => y >= latestYear - 1);
   makeChart("overlay-chart", {
     type: "line",
     data: {
       labels: MONTHS_SHORT,
-      datasets: yearList.map((y, i) => {
+      datasets: shownYears.map((y, i) => {
         const isLatest = y === latestYear, isPrev = y === latestYear - 1;
-        const shade = Math.round(200 - (120 * i) / Math.max(1, yearList.length - 1));
+        const shade = Math.round(200 - (120 * i) / Math.max(1, shownYears.length - 1));
         const colour = isLatest ? "#1f4a2c" : isPrev ? "#b86e00" : `rgb(${shade},${shade},${shade - 8})`;
         return {
           label: String(y), data: years[y], borderColor: colour, backgroundColor: colour,
@@ -394,7 +396,8 @@ function drawSeasonal() {
   const latestMonthIndex = years[latestYear].reduce((last, v, i) => (v !== null ? i : last), -1);
   const prevValue = years[latestYear - 1]?.[latestMonthIndex] ?? null;
   const nowValue = years[latestYear][latestMonthIndex];
-  let overlayText = `<p>Each line is one year of monthly ${what} prices. The thick green line is ${latestYear}, orange is ${latestYear - 1}${yearList.length > 2 ? ", and grey lines are earlier years (darker is more recent)" : ""}.</p>`;
+  let overlayText = `<p>Monthly ${what} prices. The thick green line is ${latestYear} so far and the orange line is ${latestYear - 1}` +
+    (state.allYears === "yes" && yearList.length > 2 ? `. Grey lines are earlier years (darker is more recent)` : "") + `.</p>`;
   if (latestMonthIndex >= 0 && prevValue !== null) {
     const d = nowValue - prevValue;
     overlayText += `<p>In ${MONTHS[latestMonthIndex]} ${latestYear} it averaged ${fmt(nowValue)}, ${d >= 0 ? "up" : "down"} ${Math.abs(d).toFixed(1)}p on ${MONTHS[latestMonthIndex]} ${latestYear - 1} (${fmt(prevValue)}).</p>`;

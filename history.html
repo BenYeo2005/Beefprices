@@ -119,9 +119,13 @@
           </div>
           <div class="unavailable not-enough" id="season-unavailable" hidden></div>
           <div id="season-content">
-            <h3>Each year, January to December</h3>
+            <h3>This year compared with last year</h3>
+            <div class="toggle" role="group" aria-label="Years shown">
+              <button type="button" data-set="allYears" data-value="no">This year and last year</button>
+              <button type="button" data-set="allYears" data-value="yes">All years</button>
+            </div>
             <div class="chart-box">
-              <canvas id="overlay-chart" aria-label="Chart with one line per year, January to December"></canvas>
+              <canvas id="overlay-chart" aria-label="Chart of this year and last year, January to December"></canvas>
             </div>
             <div class="summary" id="overlay-summary"></div>
 
