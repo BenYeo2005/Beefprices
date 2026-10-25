@@ -489,3 +489,12 @@ h3 {
   #filter-details > summary { pointer-events: none; }
   #filter-details > summary::after, .summary-current { display: none; }
 }
+
+/* "Where this data comes from" box */
+.data-note {
+  border-top: 1px solid var(--border);
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  font-size: 0.95rem;
+}
+.data-note p { margin: 0 0 0.5rem; }

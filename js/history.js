@@ -295,7 +295,7 @@ function drawMain() {
   }
   if (state.type !== "finished") {
     notes.push(state.type === "store"
-      ? "All breeds and ages. Each dot is one sale (about every 2–3 weeks). Gaps are where a report didn't give that figure."
+      ? "Liveweight prices are the overall averages for all store steers or heifers printed in each Hereford Market Auctioneers store cattle report (all breeds and ages). Each dot is one sale (about every 2–3 weeks). Gaps are where a report didn't give that figure."
       : "All breeds. Each dot is one sale. Some reports give only an \"All calves\" average, so choose All calves to see those sales.");
     if (start < earliest) notes.push(`Hereford Market's reports online only go back to ${dayName(earliest)}, so longer ranges show the same sales.`);
   }

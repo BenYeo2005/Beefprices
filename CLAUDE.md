@@ -20,7 +20,7 @@ A beef price dashboard website for a beef finishing farm in north Herefordshire 
 - Dairy-cross cattle typically grade around **O+ to R−**, and Hereford crosses tend to finish fatter.
   Always show realistic grades for these cattle alongside the R4L reference price, not just R4L on its own.
 
-- Calves come from a nearby dairy at a fixed, cheap price. Market calf prices are only a comparison, not the farm's cost, and the site should say so.
+- Calves come from a nearby dairy at a fixed, cheap price. This is background only: the owner asked (25 Oct 2026) for the site NOT to mention where the farm gets its calves or what it pays.
 - Never compare deadweight p/kg (carcase, AHDB finished prices) with liveweight p/kg (live animal, auction stores and calves) as if they were the same. Label every per-kg figure as deadweight or liveweight, and compare per head.
 - Background: the farm started about 2 years ago (around late 2024) and has not finished any cattle yet. It has no sale records of its own, so the dashboard uses market data only. Don't change the dashboard because of this.
 
