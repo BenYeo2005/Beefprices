@@ -25,14 +25,13 @@ GitHub Desktop is a free app that copies this folder up to GitHub with a couple 
 
 ## Part 3: put this folder on GitHub (5 minutes)
 
-1. In GitHub Desktop, choose **File → Add Local Repository…**
-2. Click **Choose…** and pick the **Beef model** folder in your home folder. Click **Add Repository**.
-3. It will say "This directory does not appear to be a Git repository". Click the blue link **create a repository**.
-4. On the next screen:
-   - **Name:** `beef-prices` (no spaces; this becomes the end of your web address)
-   - Leave **Git ignore** as **None** and **License** as **None** (the folder already has the settings it needs).
-   - Click **Create Repository**.
-5. Click **Publish repository** (top right).
+The folder has already been prepared for GitHub, with a first snapshot saved (25 October 2026).
+
+1. In GitHub Desktop, choose **File → Add Local Repository…** (or "Add an Existing Repository from your Local Drive").
+2. Click **Choose…** next to "Local path". In the window that opens, click your home folder (**benyeo**) in the left-hand list, click **Beef model** once, then click **Open**. The box should now read `/Users/benyeo/Beef model`.
+3. Click **Add Repository**.
+4. Click **Publish repository** (top right).
+   - **Name:** change it to `beef-prices` (no spaces; this becomes the end of your web address)
    - **Untick** "Keep this code private". Free GitHub Pages only works for public repositories.
    - Click **Publish Repository**.
 
