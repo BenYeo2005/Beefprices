@@ -1,0 +1,919 @@
+month,category,region,all_grades,R3,R4L
+2014-01,Heifers,England and Wales,370.3,372.3,374.5
+2014-01,Heifers,Great Britain,377.4,379.0,380.7
+2014-01,Heifers,Scotland,393.5,394.3,394.9
+2014-01,Steers,England and Wales,370.2,373.2,379.3
+2014-01,Steers,Great Britain,377.7,379.8,384.5
+2014-01,Steers,Scotland,395.9,395.9,397.3
+2014-02,Heifers,England and Wales,361.9,364.9,366.9
+2014-02,Heifers,Great Britain,367.1,368.5,370.7
+2014-02,Heifers,Scotland,379.0,376.6,379.2
+2014-02,Steers,England and Wales,361.8,366.0,371.2
+2014-02,Steers,Great Britain,367.3,369.7,374.4
+2014-02,Steers,Scotland,380.7,378.9,382.0
+2014-03,Heifers,England and Wales,359.4,362.7,364.5
+2014-03,Heifers,Great Britain,364.7,366.4,368.4
+2014-03,Heifers,Scotland,376.9,375.0,377.5
+2014-03,Steers,England and Wales,359.1,363.5,369.1
+2014-03,Steers,Great Britain,364.7,367.4,372.2
+2014-03,Steers,Scotland,378.2,377.1,379.7
+2014-04,Heifers,England and Wales,350.4,353.2,356.2
+2014-04,Heifers,Great Britain,356.7,358.3,361.0
+2014-04,Heifers,Scotland,370.9,369.9,371.9
+2014-04,Steers,England and Wales,351.3,355.7,361.6
+2014-04,Steers,Great Britain,357.4,360.6,365.3
+2014-04,Steers,Scotland,372.2,372.3,374.1
+2014-05,Heifers,England and Wales,333.7,335.4,338.8
+2014-05,Heifers,Great Britain,340.8,341.6,344.3
+2014-05,Heifers,Scotland,356.8,355.6,356.8
+2014-05,Steers,England and Wales,333.0,337.8,345.6
+2014-05,Steers,Great Britain,340.0,343.5,349.3
+2014-05,Steers,Scotland,357.2,357.4,358.1
+2014-06,Heifers,England and Wales,326.8,326.9,329.8
+2014-06,Heifers,Great Britain,332.7,332.4,335.0
+2014-06,Heifers,Scotland,346.1,344.8,346.9
+2014-06,Steers,England and Wales,322.8,328.9,337.6
+2014-06,Steers,Great Britain,329.5,333.9,340.4
+2014-06,Steers,Scotland,345.9,345.9,347.4
+2014-07,Heifers,England and Wales,324.4,325.8,329.0
+2014-07,Heifers,Great Britain,331.1,331.8,334.6
+2014-07,Heifers,Scotland,346.6,345.5,347.5
+2014-07,Steers,England and Wales,321.0,327.6,336.3
+2014-07,Steers,Great Britain,328.2,333.2,340.0
+2014-07,Steers,Scotland,345.7,346.9,349.1
+2014-08,Heifers,England and Wales,332.0,333.9,335.7
+2014-08,Heifers,Great Britain,338.7,340.5,341.9
+2014-08,Heifers,Scotland,354.0,355.7,356.0
+2014-08,Steers,England and Wales,330.0,335.8,341.7
+2014-08,Steers,Great Britain,336.6,341.2,346.2
+2014-08,Steers,Scotland,352.7,354.2,357.2
+2014-09,Heifers,England and Wales,340.7,344.8,346.4
+2014-09,Heifers,Great Britain,348.9,352.0,353.6
+2014-09,Heifers,Scotland,367.6,368.4,369.9
+2014-09,Steers,England and Wales,339.5,345.9,351.3
+2014-09,Steers,Great Britain,347.7,352.9,357.3
+2014-09,Steers,Scotland,367.7,369.8,371.9
+2014-10,Heifers,England and Wales,342.9,348.0,349.6
+2014-10,Heifers,Great Britain,352.6,357.0,358.0
+2014-10,Heifers,Scotland,374.6,377.5,377.1
+2014-10,Steers,England and Wales,341.1,347.6,353.5
+2014-10,Steers,Great Britain,350.8,356.2,360.8
+2014-10,Steers,Scotland,374.4,377.2,378.4
+2014-11,Heifers,England and Wales,346.5,351.9,354.6
+2014-11,Heifers,Great Britain,355.6,359.8,361.9
+2014-11,Heifers,Scotland,376.3,377.8,378.6
+2014-11,Steers,England and Wales,344.6,352.0,358.2
+2014-11,Steers,Great Britain,354.0,359.8,364.7
+2014-11,Steers,Scotland,376.8,378.8,380.4
+2014-12,Heifers,England and Wales,351.3,357.3,358.6
+2014-12,Heifers,Great Britain,358.9,363.6,364.3
+2014-12,Heifers,Scotland,376.3,378.1,377.5
+2014-12,Steers,England and Wales,348.5,356.3,361.9
+2014-12,Steers,Great Britain,356.3,362.3,366.6
+2014-12,Steers,Scotland,375.1,376.6,377.9
+2015-01,Heifers,England and Wales,363.3,369.4,370.7
+2015-01,Heifers,Great Britain,367.3,371.0,372.7
+2015-01,Heifers,Scotland,376.4,374.8,377.1
+2015-01,Steers,England and Wales,359.6,367.4,372.3
+2015-01,Steers,Great Britain,364.2,370.1,373.9
+2015-01,Steers,Scotland,375.5,376.5,377.8
+2015-02,Heifers,England and Wales,359.1,364.7,367.1
+2015-02,Heifers,Great Britain,363.1,366.9,369.2
+2015-02,Heifers,Scotland,372.1,372.0,373.9
+2015-02,Steers,England and Wales,356.2,364.1,368.2
+2015-02,Steers,Great Britain,361.0,366.5,370.1
+2015-02,Steers,Scotland,372.5,372.3,374.7
+2015-03,Heifers,England and Wales,353.2,358.6,361.1
+2015-03,Heifers,Great Britain,357.1,361.0,363.0
+2015-03,Heifers,Scotland,366.0,366.3,367.4
+2015-03,Steers,England and Wales,351.8,357.5,363.0
+2015-03,Steers,Great Britain,355.9,360.3,364.3
+2015-03,Steers,Scotland,365.8,367.2,367.6
+2015-04,Heifers,England and Wales,337.6,343.3,346.2
+2015-04,Heifers,Great Britain,341.9,346.1,348.3
+2015-04,Heifers,Scotland,351.6,352.5,353.2
+2015-04,Steers,England and Wales,336.3,343.0,348.3
+2015-04,Steers,Great Britain,340.8,345.8,349.7
+2015-04,Steers,Scotland,351.6,352.7,353.2
+2015-05,Heifers,England and Wales,324.7,329.9,332.1
+2015-05,Heifers,Great Britain,329.5,333.1,335.1
+2015-05,Heifers,Scotland,340.4,340.3,342.0
+2015-05,Steers,England and Wales,322.3,330.1,335.9
+2015-05,Steers,Great Britain,327.4,333.5,337.6
+2015-05,Steers,Scotland,339.7,341.8,341.8
+2015-06,Heifers,England and Wales,333.5,338.9,340.9
+2015-06,Heifers,Great Britain,338.2,342.1,343.9
+2015-06,Heifers,Scotland,348.7,349.4,350.8
+2015-06,Steers,England and Wales,332.0,339.9,343.6
+2015-06,Steers,Great Britain,336.6,342.5,345.6
+2015-06,Steers,Scotland,347.7,349.0,350.3
+2015-07,Heifers,England and Wales,347.2,354.7,356.8
+2015-07,Heifers,Great Britain,354.8,360.7,362.2
+2015-07,Heifers,Scotland,372.3,374.2,374.6
+2015-07,Steers,England and Wales,346.9,354.5,358.6
+2015-07,Steers,Great Britain,354.1,359.7,363.5
+2015-07,Steers,Scotland,371.6,372.3,375.6
+2015-08,Heifers,England and Wales,339.5,347.8,350.5
+2015-08,Heifers,Great Britain,346.8,353.8,355.9
+2015-08,Heifers,Scotland,363.2,367.3,368.2
+2015-08,Steers,England and Wales,340.4,348.5,352.8
+2015-08,Steers,Great Britain,347.2,353.6,357.9
+2015-08,Steers,Scotland,363.8,366.1,370.2
+2015-09,Heifers,England and Wales,343.5,351.3,353.9
+2015-09,Heifers,Great Britain,350.9,357.0,359.2
+2015-09,Heifers,Scotland,367.8,370.1,371.4
+2015-09,Steers,England and Wales,344.3,351.4,356.1
+2015-09,Steers,Great Britain,351.0,356.5,361.0
+2015-09,Steers,Scotland,367.5,368.9,372.7
+2015-10,Heifers,England and Wales,339.9,348.6,350.9
+2015-10,Heifers,Great Britain,347.9,355.0,356.6
+2015-10,Heifers,Scotland,366.2,369.6,369.6
+2015-10,Steers,England and Wales,340.2,347.6,353.3
+2015-10,Steers,Great Britain,347.4,353.3,358.2
+2015-10,Steers,Scotland,364.8,367.1,369.9
+2015-11,Heifers,England and Wales,336.6,345.7,349.5
+2015-11,Heifers,Great Britain,345.5,352.6,355.4
+2015-11,Heifers,Scotland,365.6,368.1,368.8
+2015-11,Steers,England and Wales,337.8,346.2,352.5
+2015-11,Steers,Great Britain,345.8,352.3,357.3
+2015-11,Steers,Scotland,365.4,367.1,369.1
+2015-12,Heifers,England and Wales,332.5,340.0,344.6
+2015-12,Heifers,Great Britain,340.2,345.7,349.5
+2015-12,Heifers,Scotland,357.8,358.7,360.9
+2015-12,Steers,England and Wales,331.3,340.3,346.6
+2015-12,Steers,Great Britain,338.5,345.6,350.4
+2015-12,Steers,Scotland,356.3,358.6,359.7
+2016-01,Heifers,England and Wales,327.6,335.2,338.6
+2016-01,Heifers,Great Britain,333.1,338.9,341.7
+2016-01,Heifers,Scotland,347.7,348.9,349.9
+2016-01,Steers,England and Wales,326.0,334.6,340.9
+2016-01,Steers,Great Britain,331.2,338.1,343.1
+2016-01,Steers,Scotland,345.7,347.8,349.2
+2016-02,Heifers,England and Wales,326.5,335.7,338.0
+2016-02,Heifers,Great Britain,331.0,337.9,339.9
+2016-02,Heifers,Scotland,342.9,343.7,345.0
+2016-02,Steers,England and Wales,326.2,334.7,339.9
+2016-02,Steers,Great Britain,330.1,336.9,341.0
+2016-02,Steers,Scotland,340.8,343.0,344.2
+2016-03,Heifers,England and Wales,323.1,332.3,334.0
+2016-03,Heifers,Great Britain,326.6,333.5,335.3
+2016-03,Heifers,Scotland,335.9,336.7,338.7
+2016-03,Steers,England and Wales,323.3,331.4,335.9
+2016-03,Steers,Great Britain,326.4,332.8,336.6
+2016-03,Steers,Scotland,335.1,336.6,338.5
+2016-04,Heifers,England and Wales,311.4,320.5,323.0
+2016-04,Heifers,Great Britain,315.6,322.8,325.0
+2016-04,Heifers,Scotland,326.8,329.1,330.3
+2016-04,Steers,England and Wales,310.7,319.4,323.6
+2016-04,Steers,Great Britain,314.5,321.5,325.1
+2016-04,Steers,Scotland,324.9,327.4,329.2
+2016-05,Heifers,England and Wales,312.0,322.1,323.3
+2016-05,Heifers,Great Britain,317.4,325.1,326.6
+2016-05,Heifers,Scotland,331.9,333.1,335.2
+2016-05,Steers,England and Wales,311.2,320.3,324.5
+2016-05,Steers,Great Britain,315.8,323.1,326.9
+2016-05,Steers,Scotland,328.4,330.7,333.5
+2016-06,Heifers,England and Wales,319.4,329.1,330.2
+2016-06,Heifers,Great Britain,325.6,333.4,334.2
+2016-06,Heifers,Scotland,342.1,344.9,345.0
+2016-06,Steers,England and Wales,316.3,327.4,331.2
+2016-06,Steers,Great Britain,322.0,331.0,334.3
+2016-06,Steers,Scotland,337.8,341.2,342.9
+2016-07,Heifers,England and Wales,327.9,337.6,338.3
+2016-07,Heifers,Great Britain,334.7,342.2,343.1
+2016-07,Heifers,Scotland,352.8,354.3,355.6
+2016-07,Steers,England and Wales,325.5,336.8,339.6
+2016-07,Steers,Great Britain,332.2,341.6,344.3
+2016-07,Steers,Scotland,350.8,354.9,357.2
+2016-08,Heifers,England and Wales,341.0,351.5,352.3
+2016-08,Heifers,Great Britain,347.6,356.2,356.4
+2016-08,Heifers,Scotland,365.1,368.6,367.3
+2016-08,Steers,England and Wales,338.9,351.0,353.9
+2016-08,Steers,Great Britain,345.2,355.6,357.9
+2016-08,Steers,Scotland,362.7,368.3,369.1
+2016-09,Heifers,England and Wales,348.5,357.8,359.5
+2016-09,Heifers,Great Britain,356.7,365.3,365.9
+2016-09,Heifers,Scotland,378.7,385.2,382.8
+2016-09,Steers,England and Wales,346.8,358.4,363.1
+2016-09,Steers,Great Britain,354.4,364.3,368.2
+2016-09,Steers,Scotland,375.7,380.8,382.3
+2016-10,Heifers,England and Wales,346.0,355.3,359.2
+2016-10,Heifers,Great Britain,354.5,361.7,364.8
+2016-10,Heifers,Scotland,376.8,378.7,379.6
+2016-10,Steers,England and Wales,344.4,356.2,363.7
+2016-10,Steers,Great Britain,352.5,362.0,368.3
+2016-10,Steers,Scotland,375.1,378.1,381.0
+2016-11,Heifers,England and Wales,346.3,355.8,359.2
+2016-11,Heifers,Great Britain,353.3,360.6,363.3
+2016-11,Heifers,Scotland,371.6,373.5,374.4
+2016-11,Steers,England and Wales,345.3,356.0,364.9
+2016-11,Steers,Great Britain,352.0,361.0,367.9
+2016-11,Steers,Scotland,370.6,374.8,376.1
+2016-12,Heifers,England and Wales,349.2,359.4,361.4
+2016-12,Heifers,Great Britain,354.6,362.7,364.1
+2016-12,Heifers,Scotland,369.0,371.4,371.3
+2016-12,Steers,England and Wales,347.4,359.2,363.2
+2016-12,Steers,Great Britain,352.9,362.6,365.6
+2016-12,Steers,Scotland,367.9,372.2,372.0
+2017-01,Heifers,England and Wales,351.3,360.0,361.1
+2017-01,Heifers,Great Britain,355.3,362.1,363.2
+2017-01,Heifers,Scotland,366.3,367.8,368.8
+2017-01,Steers,England and Wales,347.6,359.4,363.3
+2017-01,Steers,Great Britain,351.6,361.4,364.5
+2017-01,Steers,Scotland,363.4,366.9,368.1
+2017-02,Heifers,England and Wales,349.5,358.3,360.3
+2017-02,Heifers,Great Britain,352.3,358.8,360.8
+2017-02,Heifers,Scotland,360.1,360.3,362.1
+2017-02,Steers,England and Wales,345.5,357.2,360.2
+2017-02,Steers,Great Britain,348.5,358.1,360.9
+2017-02,Steers,Scotland,357.0,360.6,363.0
+2017-03,Heifers,England and Wales,343.9,354.7,355.1
+2017-03,Heifers,Great Britain,347.9,356.3,356.8
+2017-03,Heifers,Scotland,358.8,360.7,361.6
+2017-03,Steers,England and Wales,341.4,353.2,357.0
+2017-03,Steers,Great Britain,345.5,355.5,358.5
+2017-03,Steers,Scotland,357.4,362.1,362.7
+2017-04,Heifers,England and Wales,345.4,355.6,356.4
+2017-04,Heifers,Great Britain,351.0,358.7,359.8
+2017-04,Heifers,Scotland,366.5,367.5,369.1
+2017-04,Steers,England and Wales,343.6,355.3,357.6
+2017-04,Steers,Great Britain,348.8,358.5,360.5
+2017-04,Steers,Scotland,363.7,367.5,368.8
+2017-05,Heifers,England and Wales,353.5,362.2,363.2
+2017-05,Heifers,Great Britain,359.6,366.4,367.2
+2017-05,Heifers,Scotland,376.2,377.7,378.0
+2017-05,Steers,England and Wales,350.4,361.0,364.3
+2017-05,Steers,Great Britain,356.2,365.2,367.7
+2017-05,Steers,Scotland,373.1,377.2,377.8
+2017-06,Heifers,England and Wales,361.1,370.2,370.7
+2017-06,Heifers,Great Britain,366.9,373.7,374.7
+2017-06,Heifers,Scotland,382.7,383.3,385.6
+2017-06,Steers,England and Wales,356.7,368.9,371.0
+2017-06,Steers,Great Britain,362.7,373.0,374.9
+2017-06,Steers,Scotland,380.0,384.9,386.3
+2017-07,Heifers,England and Wales,365.9,374.8,376.6
+2017-07,Heifers,Great Britain,372.6,380.1,381.0
+2017-07,Heifers,Scotland,390.8,394.6,393.2
+2017-07,Steers,England and Wales,362.4,374.8,378.7
+2017-07,Steers,Great Britain,368.9,379.2,382.6
+2017-07,Steers,Scotland,387.7,392.1,393.7
+2017-08,Heifers,England and Wales,368.3,377.1,378.8
+2017-08,Heifers,Great Britain,375.5,382.1,383.9
+2017-08,Heifers,Scotland,395.0,395.9,397.9
+2017-08,Steers,England and Wales,364.8,377.6,381.9
+2017-08,Steers,Great Britain,371.9,382.4,386.1
+2017-08,Steers,Scotland,392.4,396.2,398.2
+2017-09,Heifers,England and Wales,368.7,379.5,380.8
+2017-09,Heifers,Great Britain,375.4,384.0,385.2
+2017-09,Heifers,Scotland,393.9,396.3,397.0
+2017-09,Steers,England and Wales,366.9,378.9,383.6
+2017-09,Steers,Great Britain,373.4,383.3,387.3
+2017-09,Steers,Scotland,392.2,396.0,398.0
+2017-10,Heifers,England and Wales,357.7,368.7,371.9
+2017-10,Heifers,Great Britain,364.2,373.0,375.6
+2017-10,Heifers,Scotland,382.1,384.7,385.5
+2017-10,Steers,England and Wales,356.7,369.6,375.4
+2017-10,Steers,Great Britain,362.9,373.7,378.3
+2017-10,Steers,Scotland,380.7,385.4,386.6
+2017-11,Heifers,England and Wales,361.2,374.0,375.0
+2017-11,Heifers,Great Britain,367.3,377.4,378.1
+2017-11,Heifers,Scotland,383.8,386.7,386.4
+2017-11,Steers,England and Wales,359.0,372.9,376.5
+2017-11,Steers,Great Britain,365.3,376.3,379.1
+2017-11,Steers,Scotland,383.3,386.3,386.6
+2017-12,Heifers,England and Wales,360.4,371.6,373.9
+2017-12,Heifers,Great Britain,365.6,374.2,376.1
+2017-12,Heifers,Scotland,379.7,381.5,382.0
+2017-12,Steers,England and Wales,358.6,371.2,374.6
+2017-12,Steers,Great Britain,363.5,373.9,376.4
+2017-12,Steers,Scotland,377.6,381.5,381.6
+2018-01,Heifers,England and Wales,357.0,367.1,369.6
+2018-01,Heifers,Great Britain,362.1,370.0,372.2
+2018-01,Heifers,Scotland,376.8,378.4,379.5
+2018-01,Steers,England and Wales,354.2,366.4,370.2
+2018-01,Steers,Great Britain,359.4,369.5,372.6
+2018-01,Steers,Scotland,375.1,378.9,379.7
+2018-02,Heifers,England and Wales,354.4,364.1,365.9
+2018-02,Heifers,Great Britain,358.4,365.7,367.8
+2018-02,Heifers,Scotland,369.9,370.4,373.0
+2018-02,Steers,England and Wales,350.8,361.5,365.4
+2018-02,Steers,Great Britain,355.1,364.0,367.4
+2018-02,Steers,Scotland,367.7,371.6,373.4
+2018-03,Heifers,England and Wales,355.9,365.0,367.2
+2018-03,Heifers,Great Britain,359.7,366.8,368.8
+2018-03,Heifers,Scotland,370.6,371.9,373.3
+2018-03,Steers,England and Wales,354.8,364.6,367.8
+2018-03,Steers,Great Britain,358.1,366.5,369.1
+2018-03,Steers,Scotland,368.0,371.9,372.9
+2018-04,Heifers,England and Wales,359.6,371.1,372.2
+2018-04,Heifers,Great Britain,364.7,373.5,374.9
+2018-04,Heifers,Scotland,379.3,380.3,382.5
+2018-04,Steers,England and Wales,358.1,369.5,372.0
+2018-04,Steers,Great Britain,362.9,372.5,374.6
+2018-04,Steers,Scotland,377.2,381.5,382.4
+2018-05,Heifers,England and Wales,363.8,372.2,375.5
+2018-05,Heifers,Great Britain,368.8,375.1,378.5
+2018-05,Heifers,Scotland,383.1,383.3,387.1
+2018-05,Steers,England and Wales,362.2,372.8,377.8
+2018-05,Steers,Great Britain,367.2,375.8,380.2
+2018-05,Steers,Scotland,382.0,384.8,387.6
+2018-06,Heifers,England and Wales,368.4,375.6,379.1
+2018-06,Heifers,Great Britain,373.4,378.7,382.3
+2018-06,Heifers,Scotland,387.8,387.6,391.4
+2018-06,Steers,England and Wales,365.5,375.7,379.7
+2018-06,Steers,Great Britain,370.6,378.6,382.8
+2018-06,Steers,Scotland,385.8,387.3,392.0
+2018-07,Heifers,England and Wales,359.1,367.7,372.0
+2018-07,Heifers,Great Britain,365.2,371.1,375.5
+2018-07,Heifers,Scotland,382.9,381.0,385.7
+2018-07,Steers,England and Wales,357.4,367.8,373.3
+2018-07,Steers,Great Britain,363.3,371.7,377.1
+2018-07,Steers,Scotland,380.8,383.1,388.5
+2018-08,Heifers,England and Wales,355.8,366.3,369.0
+2018-08,Heifers,Great Britain,361.8,369.3,372.7
+2018-08,Heifers,Scotland,378.9,377.9,383.3
+2018-08,Steers,England and Wales,355.2,366.2,371.9
+2018-08,Steers,Great Britain,361.2,370.0,375.3
+2018-08,Steers,Scotland,379.1,381.3,385.7
+2018-09,Heifers,England and Wales,365.1,375.9,378.1
+2018-09,Heifers,Great Britain,371.0,378.8,381.4
+2018-09,Heifers,Scotland,388.1,387.1,391.1
+2018-09,Steers,England and Wales,364.4,376.1,380.1
+2018-09,Steers,Great Britain,370.3,379.5,383.5
+2018-09,Steers,Scotland,387.7,389.6,393.3
+2018-10,Heifers,England and Wales,360.6,372.5,374.7
+2018-10,Heifers,Great Britain,366.3,375.3,377.6
+2018-10,Heifers,Scotland,382.9,383.3,386.1
+2018-10,Steers,England and Wales,360.2,372.0,377.0
+2018-10,Steers,Great Britain,365.8,375.2,379.9
+2018-10,Steers,Scotland,382.4,385.0,388.5
+2018-11,Heifers,England and Wales,353.8,366.2,369.1
+2018-11,Heifers,Great Britain,359.6,369.0,371.9
+2018-11,Heifers,Scotland,376.4,377.1,379.9
+2018-11,Steers,England and Wales,354.2,366.6,372.3
+2018-11,Steers,Great Britain,359.5,369.2,374.5
+2018-11,Steers,Scotland,375.3,377.1,381.0
+2018-12,Heifers,England and Wales,348.8,359.8,361.6
+2018-12,Heifers,Great Britain,353.4,361.2,363.6
+2018-12,Heifers,Scotland,366.4,365.2,369.4
+2018-12,Steers,England and Wales,349.1,360.2,365.5
+2018-12,Steers,Great Britain,353.4,362.1,367.0
+2018-12,Steers,Scotland,366.1,367.7,371.3
+2019-01,Heifers,England and Wales,348.1,357.9,359.5
+2019-01,Heifers,Great Britain,352.0,358.9,361.1
+2019-01,Heifers,Scotland,363.5,361.7,365.9
+2019-01,Steers,England and Wales,347.9,357.8,362.0
+2019-01,Steers,Great Britain,351.3,359.1,363.1
+2019-01,Steers,Scotland,361.6,363.2,366.2
+2019-02,Heifers,England and Wales,345.5,354.4,356.0
+2019-02,Heifers,Great Britain,349.0,355.5,357.5
+2019-02,Heifers,Scotland,359.3,358.8,361.8
+2019-02,Steers,England and Wales,344.8,353.2,358.5
+2019-02,Steers,Great Britain,347.7,354.5,359.2
+2019-02,Steers,Scotland,356.9,358.5,361.6
+2019-03,Heifers,England and Wales,335.6,344.2,345.8
+2019-03,Heifers,Great Britain,338.5,344.9,347.0
+2019-03,Heifers,Scotland,347.3,344.9,350.7
+2019-03,Steers,England and Wales,334.7,343.0,347.9
+2019-03,Steers,Great Britain,337.5,344.1,348.7
+2019-03,Steers,Scotland,346.0,347.4,351.0
+2019-04,Heifers,England and Wales,340.1,348.1,349.9
+2019-04,Heifers,Great Britain,344.2,350.4,352.2
+2019-04,Heifers,Scotland,356.4,357.3,359.1
+2019-04,Steers,England and Wales,338.8,347.5,350.2
+2019-04,Steers,Great Britain,342.8,349.9,352.4
+2019-04,Steers,Scotland,355.0,357.2,359.2
+2019-05,Heifers,England and Wales,345.9,355.1,355.3
+2019-05,Heifers,Great Britain,350.7,357.6,358.6
+2019-05,Heifers,Scotland,364.9,364.9,368.4
+2019-05,Steers,England and Wales,344.1,353.9,355.0
+2019-05,Steers,Great Britain,348.5,356.5,358.2
+2019-05,Steers,Scotland,362.2,364.6,367.8
+2019-06,Heifers,England and Wales,335.5,341.8,345.4
+2019-06,Heifers,Great Britain,340.2,344.9,348.5
+2019-06,Heifers,Scotland,354.3,354.2,357.7
+2019-06,Steers,England and Wales,332.7,341.6,344.6
+2019-06,Steers,Great Britain,337.5,344.7,347.9
+2019-06,Steers,Scotland,352.2,354.2,358.3
+2019-07,Heifers,England and Wales,325.0,332.4,336.5
+2019-07,Heifers,Great Britain,329.7,334.9,339.3
+2019-07,Heifers,Scotland,343.4,342.5,347.5
+2019-07,Steers,England and Wales,322.5,331.0,336.4
+2019-07,Steers,Great Britain,327.0,334.1,339.2
+2019-07,Steers,Scotland,341.0,343.8,347.6
+2019-08,Heifers,England and Wales,322.9,330.9,334.4
+2019-08,Heifers,Great Britain,328.3,334.0,337.9
+2019-08,Heifers,Scotland,344.4,343.0,348.1
+2019-08,Steers,England and Wales,321.4,329.6,334.4
+2019-08,Steers,Great Britain,326.5,333.3,337.9
+2019-08,Steers,Scotland,342.1,344.4,348.7
+2019-09,Heifers,England and Wales,320.6,328.7,331.5
+2019-09,Heifers,Great Britain,325.7,331.6,334.5
+2019-09,Heifers,Scotland,340.9,340.3,343.5
+2019-09,Steers,England and Wales,319.2,328.5,332.5
+2019-09,Steers,Great Britain,324.3,331.6,335.7
+2019-09,Steers,Scotland,340.1,341.2,345.6
+2019-10,Heifers,England and Wales,317.4,327.0,330.0
+2019-10,Heifers,Great Britain,323.1,330.1,333.3
+2019-10,Heifers,Scotland,339.9,339.4,343.1
+2019-10,Steers,England and Wales,317.0,327.5,332.4
+2019-10,Steers,Great Britain,322.3,330.8,335.3
+2019-10,Steers,Scotland,338.6,340.9,344.1
+2019-11,Heifers,England and Wales,319.5,331.3,333.1
+2019-11,Heifers,Great Britain,325.6,334.8,336.7
+2019-11,Heifers,Scotland,343.6,345.2,347.4
+2019-11,Steers,England and Wales,320.3,331.4,336.0
+2019-11,Steers,Great Britain,326.1,335.2,338.9
+2019-11,Steers,Scotland,343.7,346.8,347.7
+2019-12,Heifers,England and Wales,325.1,334.0,336.4
+2019-12,Heifers,Great Britain,330.2,337.2,339.3
+2019-12,Heifers,Scotland,345.2,346.7,347.7
+2019-12,Steers,England and Wales,324.5,333.9,337.9
+2019-12,Steers,Great Britain,329.6,337.5,340.7
+2019-12,Steers,Scotland,345.4,348.2,349.2
+2020-01,Heifers,England and Wales,327.8,335.9,338.8
+2020-01,Heifers,Great Britain,332.8,339.1,341.6
+2020-01,Heifers,Scotland,347.8,348.5,350.1
+2020-01,Steers,England and Wales,326.8,335.7,339.2
+2020-01,Steers,Great Britain,331.9,339.6,342.2
+2020-01,Steers,Scotland,347.7,351.5,351.4
+2020-02,Heifers,England and Wales,331.0,340.0,341.6
+2020-02,Heifers,Great Britain,336.1,341.6,345.2
+2020-02,Heifers,Scotland,348.3,349.6,351.1
+2020-02,Steers,England and Wales,330.2,339.3,342.4
+2020-02,Steers,Great Britain,334.4,341.2,345.7
+2020-02,Steers,Scotland,346.7,349.9,350.3
+2020-03,Heifers,England and Wales,332.6,341.1,343.1
+2020-03,Heifers,Great Britain,336.8,342.5,346.2
+2020-03,Heifers,Scotland,348.2,350.4,351.7
+2020-03,Steers,England and Wales,332.4,340.6,345.0
+2020-03,Steers,Great Britain,335.9,342.4,347.2
+2020-03,Steers,Scotland,346.6,350.2,350.4
+2020-04,Heifers,England and Wales,321.9,330.4,334.1
+2020-04,Heifers,Great Britain,327.8,332.3,338.5
+2020-04,Heifers,Scotland,343.8,343.0,346.1
+2020-04,Steers,England and Wales,323.2,330.9,337.0
+2020-04,Steers,Great Britain,327.8,333.1,340.7
+2020-04,Steers,Scotland,341.7,343.7,346.3
+2020-05,Heifers,England and Wales,329.6,338.1,339.3
+2020-05,Heifers,Great Britain,335.3,340.5,344.7
+2020-05,Heifers,Scotland,350.4,352.5,353.9
+2020-05,Steers,England and Wales,329.5,338.2,340.4
+2020-05,Steers,Great Britain,334.3,340.7,345.4
+2020-05,Steers,Scotland,347.4,350.0,352.4
+2020-06,Heifers,England and Wales,353.2,363.1,363.6
+2020-06,Heifers,Great Britain,359.2,365.6,369.8
+2020-06,Heifers,Scotland,377.6,380.0,380.8
+2020-06,Steers,England and Wales,351.9,361.7,362.6
+2020-06,Steers,Great Britain,357.8,365.1,370.2
+2020-06,Steers,Scotland,376.0,379.1,381.2
+2020-07,Heifers,England and Wales,357.4,365.9,367.9
+2020-07,Heifers,Great Britain,362.8,368.3,373.5
+2020-07,Heifers,Scotland,379.5,381.0,383.7
+2020-07,Steers,England and Wales,357.1,366.1,369.3
+2020-07,Steers,Great Britain,362.5,369.2,375.4
+2020-07,Steers,Scotland,378.5,381.3,383.6
+2020-08,Heifers,England and Wales,367.3,376.2,377.8
+2020-08,Heifers,Great Britain,372.6,378.5,382.7
+2020-08,Heifers,Scotland,388.4,390.0,391.9
+2020-08,Steers,England and Wales,367.2,376.7,379.2
+2020-08,Steers,Great Britain,372.2,379.8,384.8
+2020-08,Steers,Scotland,388.9,392.4,393.2
+2020-09,Heifers,England and Wales,364.3,373.8,376.2
+2020-09,Heifers,Great Britain,370.0,376.1,381.7
+2020-09,Heifers,Scotland,387.6,388.7,391.2
+2020-09,Steers,England and Wales,364.4,373.2,377.4
+2020-09,Steers,Great Britain,369.7,376.6,383.6
+2020-09,Steers,Scotland,387.1,389.6,392.3
+2020-10,Heifers,England and Wales,361.9,372.0,374.0
+2020-10,Heifers,Great Britain,367.8,374.6,379.5
+2020-10,Heifers,Scotland,383.8,385.4,387.0
+2020-10,Steers,England and Wales,363.6,372.0,376.6
+2020-10,Steers,Great Britain,368.4,375.5,381.5
+2020-10,Steers,Scotland,383.5,387.9,388.3
+2020-11,Heifers,England and Wales,367.3,377.9,379.0
+2020-11,Heifers,Great Britain,372.3,379.8,383.6
+2020-11,Heifers,Scotland,387.7,389.1,391.3
+2020-11,Steers,England and Wales,369.3,377.9,380.9
+2020-11,Steers,Great Britain,373.7,380.5,385.5
+2020-11,Steers,Scotland,388.1,390.4,392.3
+2020-12,Heifers,England and Wales,364.6,373.6,376.5
+2020-12,Heifers,Great Britain,368.9,375.3,379.1
+2020-12,Heifers,Scotland,380.3,382.6,383.5
+2020-12,Steers,England and Wales,366.3,374.6,378.9
+2020-12,Steers,Great Britain,369.8,376.3,380.5
+2020-12,Steers,Scotland,379.1,381.6,382.7
+2021-01,Heifers,England and Wales,372.5,379.4,381.1
+2021-01,Heifers,Great Britain,376.0,380.8,383.9
+2021-01,Heifers,Scotland,385.6,388.2,388.9
+2021-01,Steers,England and Wales,372.8,379.3,382.0
+2021-01,Steers,Great Britain,375.9,381.1,384.6
+2021-01,Steers,Scotland,385.2,388.5,388.5
+2021-02,Heifers,England and Wales,371.4,380.5,381.6
+2021-02,Heifers,Great Britain,375.5,381.8,384.5
+2021-02,Heifers,Scotland,386.6,388.5,389.5
+2021-02,Steers,England and Wales,373.0,380.2,382.0
+2021-02,Steers,Great Britain,376.1,381.7,384.7
+2021-02,Steers,Scotland,384.7,387.9,388.4
+2021-03,Heifers,England and Wales,382.3,391.8,392.7
+2021-03,Heifers,Great Britain,387.1,393.5,396.6
+2021-03,Heifers,Scotland,400.2,403.5,403.5
+2021-03,Steers,England and Wales,384.6,391.6,392.9
+2021-03,Steers,Great Britain,388.3,393.3,396.5
+2021-03,Steers,Scotland,398.1,400.4,401.6
+2021-04,Heifers,England and Wales,396.0,405.2,406.6
+2021-04,Heifers,Great Britain,402.9,408.4,413.2
+2021-04,Heifers,Scotland,422.3,424.6,425.5
+2021-04,Steers,England and Wales,397.7,404.8,406.3
+2021-04,Steers,Great Britain,403.3,408.1,412.8
+2021-04,Steers,Scotland,419.6,422.2,423.4
+2021-05,Heifers,England and Wales,393.5,401.4,404.1
+2021-05,Heifers,Great Britain,400.0,404.8,410.7
+2021-05,Heifers,Scotland,420.4,421.9,424.5
+2021-05,Steers,England and Wales,394.7,401.3,404.3
+2021-05,Steers,Great Britain,400.9,405.3,411.6
+2021-05,Steers,Scotland,418.5,421.6,423.2
+2021-06,Heifers,England and Wales,386.8,394.9,396.7
+2021-06,Heifers,Great Britain,392.9,398.2,403.1
+2021-06,Heifers,Scotland,410.7,412.6,414.9
+2021-06,Steers,England and Wales,387.9,394.8,397.2
+2021-06,Steers,Great Britain,393.1,398.3,403.3
+2021-06,Steers,Scotland,408.1,411.1,412.5
+2021-07,Heifers,England and Wales,397.8,406.8,407.6
+2021-07,Heifers,Great Britain,401.7,408.8,411.3
+2021-07,Heifers,Scotland,414.0,417.0,418.0
+2021-07,Steers,England and Wales,398.9,406.6,407.5
+2021-07,Steers,Great Britain,402.6,408.9,411.7
+2021-07,Steers,Scotland,413.7,417.0,418.0
+2021-08,Heifers,England and Wales,404.2,413.2,415.1
+2021-08,Heifers,Great Britain,408.6,415.5,418.4
+2021-08,Heifers,Scotland,421.4,424.2,424.4
+2021-08,Steers,England and Wales,406.2,413.8,415.1
+2021-08,Steers,Great Britain,409.8,415.7,419.0
+2021-08,Steers,Scotland,420.0,423.0,424.2
+2021-09,Heifers,England and Wales,406.6,416.7,419.2
+2021-09,Heifers,Great Britain,410.2,417.9,420.6
+2021-09,Heifers,Scotland,419.7,422.4,423.0
+2021-09,Steers,England and Wales,409.0,416.5,419.8
+2021-09,Steers,Great Britain,411.3,417.4,420.8
+2021-09,Steers,Scotland,417.6,420.4,422.2
+2021-10,Heifers,England and Wales,404.7,416.3,418.0
+2021-10,Heifers,Great Britain,408.0,417.0,418.9
+2021-10,Heifers,Scotland,416.9,419.7,420.4
+2021-10,Steers,England and Wales,408.1,416.9,420.1
+2021-10,Steers,Great Britain,410.2,417.5,420.3
+2021-10,Steers,Scotland,416.7,419.5,420.6
+2021-11,Heifers,England and Wales,407.3,419.7,421.3
+2021-11,Heifers,Great Britain,410.4,420.3,421.7
+2021-11,Heifers,Scotland,419.0,423.1,422.4
+2021-11,Steers,England and Wales,410.9,420.4,423.2
+2021-11,Steers,Great Britain,412.8,420.8,423.1
+2021-11,Steers,Scotland,418.2,422.0,422.9
+2021-12,Heifers,England and Wales,404.2,414.5,417.8
+2021-12,Heifers,Great Britain,406.8,414.8,417.9
+2021-12,Heifers,Scotland,413.9,416.0,418.1
+2021-12,Steers,England and Wales,407.4,415.7,420.5
+2021-12,Steers,Great Britain,408.8,415.5,419.0
+2021-12,Steers,Scotland,412.4,414.8,417.1
+2022-01,Heifers,England and Wales,405.0,414.6,416.7
+2022-01,Heifers,Great Britain,406.5,414.3,415.8
+2022-01,Heifers,Scotland,410.4,412.9,414.3
+2022-01,Steers,England and Wales,407.1,415.0,417.6
+2022-01,Steers,Great Britain,407.6,414.5,416.0
+2022-01,Steers,Scotland,409.1,412.7,413.8
+2022-02,Heifers,England and Wales,405.0,414.5,416.3
+2022-02,Heifers,Great Britain,406.6,414.2,415.6
+2022-02,Heifers,Scotland,411.0,412.7,414.5
+2022-02,Steers,England and Wales,406.9,414.7,416.4
+2022-02,Steers,Great Britain,406.9,414.0,414.3
+2022-02,Steers,Scotland,407.0,411.4,411.2
+2022-03,Heifers,England and Wales,415.4,425.5,425.8
+2022-03,Heifers,Great Britain,418.6,426.1,427.6
+2022-03,Heifers,Scotland,427.5,428.8,430.7
+2022-03,Steers,England and Wales,418.1,425.3,426.5
+2022-03,Steers,Great Britain,419.5,425.4,427.0
+2022-03,Steers,Scotland,423.5,425.7,427.7
+2022-04,Heifers,England and Wales,434.2,443.1,445.0
+2022-04,Heifers,Great Britain,437.1,443.9,446.2
+2022-04,Heifers,Scotland,445.3,447.7,448.4
+2022-04,Steers,England and Wales,435.7,442.3,445.0
+2022-04,Steers,Great Britain,437.3,442.9,445.2
+2022-04,Steers,Scotland,441.7,445.1,445.6
+2022-05,Heifers,England and Wales,437.8,446.2,447.9
+2022-05,Heifers,Great Britain,440.0,446.6,448.6
+2022-05,Heifers,Scotland,446.5,448.5,449.8
+2022-05,Steers,England and Wales,438.2,445.4,447.8
+2022-05,Steers,Great Britain,439.1,445.3,447.1
+2022-05,Steers,Scotland,441.7,445.1,446.0
+2022-06,Heifers,England and Wales,439.5,447.9,449.7
+2022-06,Heifers,Great Britain,442.5,448.9,451.9
+2022-06,Heifers,Scotland,451.7,453.3,455.5
+2022-06,Steers,England and Wales,441.0,447.8,450.7
+2022-06,Steers,Great Britain,443.0,448.5,452.2
+2022-06,Steers,Scotland,449.0,451.0,454.4
+2022-07,Heifers,England and Wales,435.6,443.8,447.1
+2022-07,Heifers,Great Britain,439.6,445.3,450.4
+2022-07,Heifers,Scotland,451.5,451.2,455.1
+2022-07,Steers,England and Wales,437.6,444.9,449.1
+2022-07,Steers,Great Britain,439.9,446.1,451.0
+2022-07,Steers,Scotland,447.5,450.8,453.7
+2022-08,Heifers,England and Wales,429.8,439.6,441.6
+2022-08,Heifers,Great Britain,434.2,441.2,444.9
+2022-08,Heifers,Scotland,446.5,447.2,449.5
+2022-08,Steers,England and Wales,432.1,441.0,443.0
+2022-08,Steers,Great Britain,435.2,442.5,445.5
+2022-08,Steers,Scotland,444.4,447.8,449.0
+2022-09,Heifers,England and Wales,432.0,442.8,444.4
+2022-09,Heifers,Great Britain,436.2,444.3,447.8
+2022-09,Heifers,Scotland,449.0,450.4,453.0
+2022-09,Steers,England and Wales,435.4,443.7,444.6
+2022-09,Steers,Great Britain,438.7,445.6,448.5
+2022-09,Steers,Scotland,448.8,452.1,453.5
+2022-10,Heifers,England and Wales,434.5,446.5,447.7
+2022-10,Heifers,Great Britain,439.7,448.1,452.2
+2022-10,Heifers,Scotland,455.4,455.5,458.7
+2022-10,Steers,England and Wales,438.6,447.4,449.1
+2022-10,Steers,Great Britain,442.8,449.8,453.9
+2022-10,Steers,Scotland,455.7,458.7,459.9
+2022-11,Heifers,England and Wales,436.1,449.2,450.7
+2022-11,Heifers,Great Britain,441.0,450.4,453.9
+2022-11,Heifers,Scotland,455.1,456.2,458.2
+2022-11,Steers,England and Wales,440.1,449.8,451.7
+2022-11,Steers,Great Britain,444.1,451.8,455.2
+2022-11,Steers,Scotland,455.8,458.0,459.3
+2022-12,Heifers,England and Wales,437.1,449.2,450.3
+2022-12,Heifers,Great Britain,441.2,449.8,452.5
+2022-12,Heifers,Scotland,452.6,452.4,455.3
+2022-12,Steers,England and Wales,442.0,450.5,452.2
+2022-12,Steers,Great Britain,444.5,451.1,454.1
+2022-12,Steers,Scotland,451.9,453.8,456.3
+2023-01,Heifers,England and Wales,451.5,462.2,463.0
+2023-01,Heifers,Great Britain,454.8,462.5,464.3
+2023-01,Heifers,Scotland,463.8,464.1,466.1
+2023-01,Steers,England and Wales,454.1,463.0,464.3
+2023-01,Steers,Great Britain,456.2,463.2,465.3
+2023-01,Steers,Scotland,462.3,463.9,466.5
+2023-02,Heifers,England and Wales,472.5,483.7,483.8
+2023-02,Heifers,Great Britain,475.3,483.6,484.8
+2023-02,Heifers,Scotland,483.3,482.8,486.1
+2023-02,Steers,England and Wales,474.8,483.8,485.9
+2023-02,Steers,Great Britain,476.4,483.5,485.8
+2023-02,Steers,Scotland,481.0,482.4,485.6
+2023-03,Heifers,England and Wales,481.7,492.6,493.0
+2023-03,Heifers,Great Britain,485.1,493.3,494.6
+2023-03,Heifers,Scotland,495.5,496.4,497.2
+2023-03,Steers,England and Wales,484.5,492.9,493.2
+2023-03,Steers,Great Britain,486.9,493.6,494.8
+2023-03,Steers,Scotland,494.6,496.4,497.1
+2023-04,Heifers,England and Wales,485.3,496.6,496.7
+2023-04,Heifers,Great Britain,489.3,497.5,500.1
+2023-04,Heifers,Scotland,502.8,503.5,505.7
+2023-04,Steers,England and Wales,488.1,496.7,496.5
+2023-04,Steers,Great Britain,491.2,497.9,499.9
+2023-04,Steers,Scotland,502.0,503.7,505.1
+2023-05,Heifers,England and Wales,485.6,497.4,498.0
+2023-05,Heifers,Great Britain,490.3,498.5,502.2
+2023-05,Heifers,Scotland,506.7,505.9,509.4
+2023-05,Steers,England and Wales,489.0,497.2,498.5
+2023-05,Steers,Great Britain,493.2,499.4,503.2
+2023-05,Steers,Scotland,507.2,508.9,509.7
+2023-06,Heifers,England and Wales,477.1,487.5,489.2
+2023-06,Heifers,Great Britain,480.8,488.5,492.6
+2023-06,Heifers,Scotland,496.1,496.8,499.3
+2023-06,Steers,England and Wales,479.4,488.0,490.8
+2023-06,Steers,Great Britain,482.6,489.5,494.1
+2023-06,Steers,Scotland,494.6,497.8,498.8
+2023-07,Heifers,England and Wales,461.2,472.3,474.4
+2023-07,Heifers,Great Britain,465.0,473.4,477.1
+2023-07,Heifers,Scotland,478.1,479.5,481.6
+2023-07,Steers,England and Wales,464.1,473.6,476.0
+2023-07,Steers,Great Britain,466.7,474.6,478.1
+2023-07,Steers,Scotland,476.0,479.6,481.1
+2023-08,Heifers,England and Wales,451.4,464.4,465.5
+2023-08,Heifers,Great Britain,456.3,466.1,468.8
+2023-08,Heifers,Scotland,471.5,474.0,474.1
+2023-08,Steers,England and Wales,455.3,465.7,466.4
+2023-08,Steers,Great Britain,459.0,466.8,470.2
+2023-08,Steers,Scotland,470.9,472.3,475.4
+2023-09,Heifers,England and Wales,467.0,479.6,481.0
+2023-09,Heifers,Great Britain,472.9,481.6,486.6
+2023-09,Heifers,Scotland,490.7,491.1,494.3
+2023-09,Steers,England and Wales,470.4,480.7,481.9
+2023-09,Steers,Great Britain,475.9,483.8,488.3
+2023-09,Steers,Scotland,491.8,494.9,495.1
+2023-10,Heifers,England and Wales,470.7,485.1,486.8
+2023-10,Heifers,Great Britain,476.6,487.0,491.5
+2023-10,Heifers,Scotland,495.1,497.7,497.9
+2023-10,Steers,England and Wales,476.1,486.4,488.0
+2023-10,Steers,Great Britain,480.9,489.0,493.2
+2023-10,Steers,Scotland,496.8,500.4,499.3
+2023-11,Heifers,England and Wales,470.2,486.0,486.4
+2023-11,Heifers,Great Britain,476.3,487.9,491.6
+2023-11,Heifers,Scotland,496.5,498.8,498.6
+2023-11,Steers,England and Wales,477.4,487.4,488.3
+2023-11,Steers,Great Britain,481.8,489.8,493.7
+2023-11,Steers,Scotland,497.4,500.4,500.1
+2023-12,Heifers,England and Wales,477.9,489.6,491.7
+2023-12,Heifers,Great Britain,482.7,491.0,494.8
+2023-12,Heifers,Scotland,497.2,498.5,499.5
+2023-12,Steers,England and Wales,482.5,491.3,494.2
+2023-12,Steers,Great Britain,486.3,492.8,497.4
+2023-12,Steers,Scotland,497.6,499.0,501.1
+2024-01,Heifers,England and Wales,486.6,497.3,499.0
+2024-01,Heifers,Great Britain,489.8,497.9,500.4
+2024-01,Heifers,Scotland,500.3,501.9,502.8
+2024-01,Steers,England and Wales,490.7,498.7,501.3
+2024-01,Steers,Great Britain,493.0,499.2,502.3
+2024-01,Steers,Scotland,500.3,502.1,503.6
+2024-02,Heifers,England and Wales,491.6,502.0,503.2
+2024-02,Heifers,Great Britain,494.9,502.7,505.1
+2024-02,Heifers,Scotland,505.9,508.0,508.6
+2024-02,Steers,England and Wales,495.0,502.8,504.0
+2024-02,Steers,Great Britain,497.3,503.4,505.9
+2024-02,Steers,Scotland,505.1,507.3,508.9
+2024-03,Heifers,England and Wales,488.0,498.5,501.2
+2024-03,Heifers,Great Britain,490.7,498.8,502.1
+2024-03,Heifers,Scotland,499.9,501.8,503.7
+2024-03,Steers,England and Wales,491.9,499.6,502.5
+2024-03,Steers,Great Britain,493.9,500.3,502.8
+2024-03,Steers,Scotland,500.5,504.0,503.3
+2024-04,Heifers,England and Wales,482.5,492.4,494.8
+2024-04,Heifers,Great Britain,484.8,492.7,495.4
+2024-04,Heifers,Scotland,492.9,494.6,496.4
+2024-04,Steers,England and Wales,486.3,493.3,495.5
+2024-04,Steers,Great Britain,487.5,493.7,495.3
+2024-04,Steers,Scotland,491.8,495.3,495.1
+2024-05,Heifers,England and Wales,479.7,488.1,490.8
+2024-05,Heifers,Great Britain,481.8,488.5,491.6
+2024-05,Heifers,Scotland,489.2,491.4,492.8
+2024-05,Steers,England and Wales,483.0,489.6,492.5
+2024-05,Steers,Great Britain,484.1,489.6,492.2
+2024-05,Steers,Scotland,488.1,489.7,491.9
+2024-06,Heifers,England and Wales,474.3,482.7,486.3
+2024-06,Heifers,Great Britain,475.9,482.8,486.4
+2024-06,Heifers,Scotland,482.5,483.9,486.8
+2024-06,Steers,England and Wales,477.2,484.2,486.0
+2024-06,Steers,Great Britain,478.0,484.1,485.2
+2024-06,Steers,Scotland,480.6,483.7,483.8
+2024-07,Heifers,England and Wales,478.0,486.8,490.0
+2024-07,Heifers,Great Britain,480.1,487.2,490.9
+2024-07,Heifers,Scotland,488.3,490.2,492.8
+2024-07,Steers,England and Wales,480.5,487.9,489.9
+2024-07,Steers,Great Britain,481.8,488.2,490.3
+2024-07,Steers,Scotland,486.5,489.4,491.0
+2024-08,Heifers,England and Wales,488.6,498.8,500.5
+2024-08,Heifers,Great Britain,491.3,499.1,501.9
+2024-08,Heifers,Scotland,500.7,502.1,504.2
+2024-08,Steers,England and Wales,492.2,499.7,501.0
+2024-08,Steers,Great Britain,494.2,500.4,502.4
+2024-08,Steers,Scotland,501.2,504.6,504.4
+2024-09,Heifers,England and Wales,498.8,510.0,510.6
+2024-09,Heifers,Great Britain,502.4,510.9,513.6
+2024-09,Heifers,Scotland,515.6,518.2,518.9
+2024-09,Steers,England and Wales,502.3,510.5,511.8
+2024-09,Steers,Great Britain,505.5,512.2,514.9
+2024-09,Steers,Scotland,516.2,520.1,519.3
+2024-10,Heifers,England and Wales,504.3,516.7,518.9
+2024-10,Heifers,Great Britain,509.6,518.6,523.6
+2024-10,Heifers,Scotland,526.3,529.2,529.6
+2024-10,Steers,England and Wales,510.0,518.5,520.8
+2024-10,Steers,Great Britain,513.8,521.1,524.6
+2024-10,Steers,Scotland,526.5,530.9,530.0
+2024-11,Heifers,England and Wales,519.0,533.3,534.0
+2024-11,Heifers,Great Britain,523.3,534.5,537.3
+2024-11,Heifers,Scotland,538.7,542.0,542.1
+2024-11,Steers,England and Wales,525.1,534.4,535.8
+2024-11,Steers,Great Britain,528.7,536.3,539.3
+2024-11,Steers,Scotland,540.6,543.3,543.7
+2024-12,Heifers,England and Wales,537.8,550.2,552.0
+2024-12,Heifers,Great Britain,542.5,551.7,555.6
+2024-12,Heifers,Scotland,557.5,561.5,560.8
+2024-12,Steers,England and Wales,543.9,552.7,555.3
+2024-12,Steers,Great Britain,547.7,554.7,558.0
+2024-12,Steers,Scotland,559.5,563.1,561.5
+2025-01,Heifers,England and Wales,572.0,582.0,584.4
+2025-01,Heifers,Great Britain,577.0,583.8,588.6
+2025-01,Heifers,Scotland,594.6,597.9,596.5
+2025-01,Steers,England and Wales,575.5,583.7,587.7
+2025-01,Steers,Great Britain,579.7,586.0,590.1
+2025-01,Steers,Scotland,593.8,596.4,593.8
+2025-02,Heifers,England and Wales,626.2,637.7,638.4
+2025-02,Heifers,Great Britain,630.6,638.7,642.0
+2025-02,Heifers,Scotland,645.5,646.5,648.0
+2025-02,Steers,England and Wales,630.5,639.1,641.2
+2025-02,Steers,Great Britain,634.1,640.8,644.0
+2025-02,Steers,Scotland,645.5,648.7,648.1
+2025-03,Heifers,England and Wales,660.9,672.9,673.8
+2025-03,Heifers,Great Britain,665.7,674.4,678.3
+2025-03,Heifers,Scotland,682.2,685.6,686.1
+2025-03,Steers,England and Wales,665.4,674.1,675.4
+2025-03,Steers,Great Britain,669.3,676.4,679.5
+2025-03,Steers,Scotland,682.4,686.9,685.7
+2025-04,Heifers,England and Wales,690.7,701.5,703.1
+2025-04,Heifers,Great Britain,696.4,703.5,708.6
+2025-04,Heifers,Scotland,715.4,719.9,718.3
+2025-04,Steers,England and Wales,694.2,702.9,704.4
+2025-04,Steers,Great Britain,698.8,705.7,709.1
+2025-04,Steers,Scotland,714.8,720.9,716.7
+2025-05,Heifers,England and Wales,676.4,685.1,690.5
+2025-05,Heifers,Great Britain,681.0,686.8,694.0
+2025-05,Heifers,Scotland,698.3,701.9,701.8
+2025-05,Steers,England and Wales,678.3,686.4,689.7
+2025-05,Steers,Great Britain,682.9,689.5,694.7
+2025-05,Steers,Scotland,699.4,706.3,703.3
+2025-06,Heifers,England and Wales,635.8,644.8,650.7
+2025-06,Heifers,Great Britain,639.2,646.0,653.1
+2025-06,Heifers,Scotland,653.9,655.8,659.0
+2025-06,Steers,England and Wales,638.2,647.4,652.5
+2025-06,Steers,Great Britain,641.3,648.9,653.6
+2025-06,Steers,Scotland,652.8,656.6,655.5
+2025-07,Heifers,England and Wales,634.2,644.6,647.5
+2025-07,Heifers,Great Britain,637.7,645.5,649.9
+2025-07,Heifers,Scotland,651.7,653.0,655.9
+2025-07,Steers,England and Wales,636.8,646.4,648.1
+2025-07,Steers,Great Britain,639.3,647.3,649.4
+2025-07,Steers,Scotland,648.3,652.3,652.0
+2025-08,Heifers,England and Wales,635.9,646.2,649.1
+2025-08,Heifers,Great Britain,640.0,647.8,652.8
+2025-08,Heifers,Scotland,658.7,660.6,662.8
+2025-08,Steers,England and Wales,639.8,648.0,651.4
+2025-08,Steers,Great Britain,643.0,649.8,653.8
+2025-08,Steers,Scotland,656.0,659.4,659.4
+2025-09,Heifers,England and Wales,634.0,644.6,646.1
+2025-09,Heifers,Great Britain,638.0,646.0,649.9
+2025-09,Heifers,Scotland,654.4,656.4,658.4
+2025-09,Steers,England and Wales,638.0,646.4,648.8
+2025-09,Steers,Great Britain,641.2,648.3,651.6
+2025-09,Steers,Scotland,653.3,657.0,656.6
+2025-10,Heifers,England and Wales,645.1,656.2,656.3
+2025-10,Heifers,Great Britain,647.7,656.5,658.3
+2025-10,Heifers,Scotland,657.1,658.1,662.4
+2025-10,Steers,England and Wales,648.5,657.1,658.9
+2025-10,Steers,Great Britain,650.0,657.5,659.1
+2025-10,Steers,Scotland,655.3,659.3,659.5
+2025-11,Heifers,England and Wales,656.3,667.7,668.7
+2025-11,Heifers,Great Britain,658.3,667.8,669.2
+2025-11,Heifers,Scotland,666.1,668.1,670.5
+2025-11,Steers,England and Wales,660.1,668.4,671.2
+2025-11,Steers,Great Britain,661.2,668.1,670.3
+2025-11,Steers,Scotland,665.3,667.0,668.8
+2025-12,Heifers,England and Wales,646.3,657.6,659.6
+2025-12,Heifers,Great Britain,648.9,657.7,660.5
+2025-12,Heifers,Scotland,658.6,658.6,662.6
+2025-12,Steers,England and Wales,651.3,660.5,662.8
+2025-12,Steers,Great Britain,653.2,660.7,663.0
+2025-12,Steers,Scotland,659.7,661.3,663.5
+2026-01,Heifers,England and Wales,638.9,647.7,651.0
+2026-01,Heifers,Great Britain,641.5,648.1,651.7
+2026-01,Heifers,Scotland,650.4,651.1,653.4
+2026-01,Steers,England and Wales,642.0,649.0,652.8
+2026-01,Steers,Great Britain,643.3,649.1,652.4
+2026-01,Steers,Scotland,647.6,649.2,651.7
+2026-02,Heifers,England and Wales,633.0,640.6,644.6
+2026-02,Heifers,Great Britain,635.9,641.1,645.8
+2026-02,Heifers,Scotland,645.1,645.0,648.3
+2026-02,Steers,England and Wales,635.4,642.0,646.6
+2026-02,Steers,Great Britain,636.7,642.0,645.5
+2026-02,Steers,Scotland,640.7,642.5,643.8
+2026-03,Heifers,England and Wales,631.6,639.0,643.0
+2026-03,Heifers,Great Britain,633.7,639.5,643.8
+2026-03,Heifers,Scotland,641.1,642.7,645.5
+2026-03,Steers,England and Wales,634.1,639.6,643.5
+2026-03,Steers,Great Britain,635.3,639.7,643.1
+2026-03,Steers,Scotland,638.9,640.2,642.3
+2026-04,Heifers,England and Wales,627.2,633.3,637.2
+2026-04,Heifers,Great Britain,629.6,633.9,638.7
+2026-04,Heifers,Scotland,637.8,638.6,642.6
+2026-04,Steers,England and Wales,629.2,634.5,638.7
+2026-04,Steers,Great Britain,630.1,634.8,638.2
+2026-04,Steers,Scotland,632.9,635.8,637.1
+2026-05,Heifers,England and Wales,599.9,605.8,609.3
+2026-05,Heifers,Great Britain,602.1,606.1,611.3
+2026-05,Heifers,Scotland,610.6,608.3,616.7
+2026-05,Steers,England and Wales,601.6,607.0,610.7
+2026-05,Steers,Great Britain,601.7,606.8,609.5
+2026-05,Steers,Scotland,601.8,605.8,607.4
+2026-06,Heifers,England and Wales,592.8,598.0,602.8
+2026-06,Heifers,Great Britain,594.6,598.4,604.2
+2026-06,Heifers,Scotland,601.7,601.0,608.1
+2026-06,Steers,England and Wales,595.2,599.8,604.4
+2026-06,Steers,Great Britain,594.7,599.4,602.1
+2026-06,Steers,Scotland,593.0,597.8,597.5
+2026-07,Heifers,England and Wales,601.0,606.5,611.0
+2026-07,Heifers,Great Britain,603.5,607.1,613.1
+2026-07,Heifers,Scotland,613.3,611.7,619.1
+2026-07,Steers,England and Wales,602.6,607.8,610.8
+2026-07,Steers,Great Britain,603.6,608.1,610.6
+2026-07,Steers,Scotland,607.1,609.3,610.2
+2026-08,Heifers,England and Wales,605.2,612.0,616.2
+2026-08,Heifers,Great Britain,609.5,613.7,620.0
+2026-08,Heifers,Scotland,628.0,625.5,631.2
+2026-08,Steers,England and Wales,607.6,613.4,615.2
+2026-08,Steers,Great Britain,610.8,615.2,618.5
+2026-08,Steers,Scotland,622.4,624.4,625.4
+2026-09,Heifers,England and Wales,613.6,620.5,624.8
+2026-09,Heifers,Great Britain,618.6,622.9,629.7
+2026-09,Heifers,Scotland,637.1,637.0,641.5
+2026-09,Steers,England and Wales,616.9,622.3,624.6
+2026-09,Steers,Great Britain,621.0,625.3,629.7
+2026-09,Steers,Scotland,633.3,636.0,638.8

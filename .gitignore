@@ -1,0 +1,10 @@
+# Not published to GitHub:
+# - raw downloads (AHDB spreadsheets and Hereford Market PDFs), kept on this laptop only
+data/raw/
+# - screenshots used while building the site
+screenshots/
+# - Claude Code's local settings
+.claude/
+# - Mac and Python clutter
+.DS_Store
+__pycache__/

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Today's prices – Beef price dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+    <p class="site-title">Beef price dashboard</p>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" aria-current="page">Today</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="outlook.html">Outlook</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Today's prices</h1>
+    <p class="intro">The latest prices for steers and heifers, to help decide whether to sell as stores or keep and finish.</p>
+
+    <div class="card-grid">
+
+    <section class="card warning span-2">
+      <h2>Two kinds of "price per kg"</h2>
+      <p><strong>Deadweight</strong> is the price per kg of <em>carcase</em>, paid by the abattoir for finished cattle.</p>
+      <p><strong>Liveweight</strong> is the price per kg of the <em>live animal</em>, paid at auction for stores and calves.</p>
+      <p>A carcase weighs much less than the live animal, so a deadweight price per kg is always much higher than a liveweight one. Don't compare the two directly. Compare the price per head instead.</p>
+    </section>
+
+    <!-- Question 1 -->
+    <section class="card span-2" id="q-finished">
+      <h2>1. What would finished cattle make?</h2>
+      <p>Abattoir price per kg of carcase (<strong>deadweight</strong>), steers and heifers.</p>
+      <p class="grade-line"><strong>Grades in one line:</strong> R4L is the standard grade that prices are usually quoted for: shape R (average) with fat class 4L (medium fat). O+4L is one shape grade lower (O+) with the same fat. From the farm's own experience (not a published figure), dairy-cross cattle usually grade around O+ to R, and Hereford crosses tend to be fatter (4H).</p>
+      <div class="toggle" role="group" aria-label="Choose area">
+        <button type="button" data-region="England and Wales" aria-pressed="true">England and Wales</button>
+        <button type="button" data-region="Great Britain" aria-pressed="false">Great Britain</button>
+      </div>
+      <div class="calc">
+        <label for="carcase-weight">Optional: enter a carcase weight to see the value per head</label>
+        <div class="calc-row">
+          <input id="carcase-weight" type="number" inputmode="decimal" min="1" max="800" placeholder="e.g. 320">
+          <span>kg carcase</span>
+        </div>
+      </div>
+      <div id="finished-prices"><p class="no-data">Loading prices…</p></div>
+      <p class="source-line" id="finished-source">Source: AHDB</p>
+    </section>
+
+    <!-- Question 2 -->
+    <section class="card span-2" id="q-stores">
+      <h2>2. What would they make as stores?</h2>
+      <p>Auction prices for store cattle, per head and per kg of the live animal (<strong>liveweight</strong>).</p>
+      <div class="unavailable">
+        <p><strong>Not available: Continental cross (Belgian Blue x) and Native cross (Hereford x) prices at about 12 months.</strong></p>
+        <p>Since January 2024, national store prices by breed type and age are only sold by the Livestock Auctioneers' Association (LAA), and its terms don't allow them to be shared. Hereford Market's reports give one average for all steers and one for all heifers, not by breed or age.</p>
+      </div>
+      <p class="label">What we do have: Hereford Market sale averages</p>
+      <div id="store-prices"><p class="no-data">Loading prices…</p></div>
+      <p class="source-line" id="store-source">Source: Hereford Market sale reports</p>
+    </section>
+
+    <!-- Question 3 -->
+    <section class="card" id="q-calves">
+      <h2>3. What do calves cost to buy?</h2>
+      <p class="farm-note">Our calves come from a nearby dairy at a fixed price, so these figures show what calves are making on the open market. They're useful as a comparison, but they're not what we pay.</p>
+      <div class="unavailable">
+        <p><strong>Not available: average prices for Belgian Blue x and Hereford x dairy calves on their own.</strong></p>
+        <p>Hereford Market's reports give averages for all rearing calves in the sale, all breeds together. Prices for particular breeds are only mentioned as examples in the written report.</p>
+      </div>
+      <p class="label">What we do have: Hereford Market rearing calf averages</p>
+      <div id="calf-prices"><p class="no-data">Loading prices…</p></div>
+      <p class="source-line" id="calf-source">Source: Hereford Market sale reports</p>
+    </section>
+
+    <!-- Regional comparison -->
+    <section class="card" id="regions">
+      <h2>How regions compare</h2>
+      <p>R4L <strong>deadweight</strong> price in each region AHDB reports, for the latest week.</p>
+      <div class="toggle" role="group" aria-label="Choose steers or heifers">
+        <button type="button" data-region-cat="Steers" aria-pressed="true">Steers</button>
+        <button type="button" data-region-cat="Heifers" aria-pressed="false">Heifers</button>
+      </div>
+      <div id="region-prices"><p class="no-data">Loading prices…</p></div>
+      <p class="note">AHDB doesn't publish which counties fall in its Central, Northern and Southern regions, so we can't say which one Herefordshire is in. Herefordshire is in the England and Wales figure.</p>
+      <p class="source-line" id="region-source">Source: AHDB</p>
+    </section>
+
+    <!-- Local markets -->
+    <section class="card" id="local">
+      <h2>Local markets</h2>
+      <p>Nearby livestock markets, and whether they publish prices regularly.</p>
+      <ul class="market-list">
+        <li>
+          <p class="market-name">Hereford Market</p>
+          <p>Store cattle on Thursdays, about every 2–3 weeks. Rearing calves every Tuesday. Reports are published online as PDFs.</p>
+          <p id="local-hereford">Latest reports used on this page: loading…</p>
+          <p><a href="https://www.herefordmarket.co.uk/market-reports/">Hereford Market reports</a></p>
+        </li>
+        <li>
+          <p class="market-name">Ross-on-Wye Market (RG &amp; RB Williams)</p>
+          <p>Weekly Monday sale including finished cattle. There are no price reports on the market's own website. Write-ups appear in the Ross Gazette from time to time, for example the <a href="https://www.rossgazette.com/news/ross-livestock-market-sees-strong-trade-for-cattle-and-lambs-936418">sale of 10 August 2026</a>.</p>
+          <p class="note">Not used for prices here, because the write-ups are irregular news stories.</p>
+        </li>
+        <li>
+          <p class="market-name">Ludlow Market (McCartneys)</p>
+          <p>Finished (prime) cattle on Mondays, store sales on Fridays. When checked on 25 October 2026, the newest Ludlow report on McCartneys' website was from 18 August 2025.</p>
+          <p><a href="https://mccartneys.co.uk/livestock-services/sales-report/">McCartneys sales reports</a></p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>What these words mean</h2>
+      <dl class="glossary">
+        <dt>Deadweight</dt>
+        <dd>Price per kilo of the carcase after slaughter, paid by the abattoir.</dd>
+        <dt>Liveweight</dt>
+        <dd>Price per kilo of the live animal, as sold at auction.</dd>
+        <dt>Stores</dt>
+        <dd>Cattle sold before they are ready for slaughter, for another farm to finish.</dd>
+        <dt>p/kg</dt>
+        <dd>Pence per kilo.</dd>
+        <dt>Grade (for example R4L)</dt>
+        <dd>How a carcase is graded. The letter is the shape (from best to poorest: E, U, R, O, P). The number is the fat cover (1 is leanest, 5 is fattest, with 4 split into 4L lower and 4H higher).</dd>
+        <dt>O+</dt>
+        <dd>The upper half of the O shape grade, one step below R.</dd>
+        <dt>−O</dt>
+        <dd>The lower half of the O shape grade, one step below O+.</dd>
+        <dt>Prime cattle</dt>
+        <dd>Young cattle finished for slaughter: steers, heifers and young bulls (not cows).</dd>
+        <dt>AHDB</dt>
+        <dd>The Agriculture and Horticulture Development Board, the farming levy body. It collects prices from abattoirs every week.</dd>
+        <dt>Before deductions</dt>
+        <dd>The price before costs such as haulage, levy and insurance are taken off.</dd>
+      </dl>
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <h2>When the data was last updated</h2>
+      <p id="last-updated">No price data has been added yet.</p>
+      <h2>Where the data comes from</h2>
+      <ul>
+        <li>Finished cattle prices: <a href="https://ahdb.org.uk/beef/gb-deadweight-cattle-prices">AHDB (the Agriculture and Horticulture Development Board, the farming levy body), GB deadweight cattle prices</a> (Great Britain; Northern Ireland not included)</li>
+        <li>Store cattle and calf prices: <a href="https://www.herefordmarket.co.uk/market-reports/">Hereford Market Auctioneers, sale reports</a></li>
+      </ul>
+      <p>Steers and heifers only. Cows and young bulls are not included.</p>
+      <p>All prices are market averages. What any one animal makes depends on its weight, grade, buyer and the deductions taken off, so your own prices will differ. This site is for information only. It is not advice on when to buy or sell.</p>
+    </div>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/today.js"></script>
+</body>
+</html>

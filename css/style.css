@@ -1,0 +1,491 @@
+/* Beef price dashboard – shared styles for all three pages.
+   Built for phones first, read outdoors: big text, strong contrast, calm colours. */
+
+:root {
+  --bg: #f7f4ec;          /* warm off-white, easier on the eye than pure white */
+  --card: #ffffff;
+  --text: #1b1b1b;        /* near-black for strong contrast */
+  --muted: #4a4a4a;       /* still dark enough to read in sunlight */
+  --green-dark: #1f4a2c;  /* main farm green: header and nav */
+  --green-light: #e3ecdf;
+  --border: #cfc8b8;
+  --up: #1b7a32;          /* green: price went up */
+  --down: #b3261e;        /* red: price went down */
+  --focus: #f2b300;       /* yellow outline when using a keyboard */
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 112.5%; } /* 18px base text */
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: var(--green-dark); }
+
+a:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* ---------- Header and navigation ---------- */
+
+.site-header {
+  background: var(--green-dark);
+  color: #fff;
+  padding: 0.75rem 1rem 0;
+}
+
+.site-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.site-nav li { flex: 1; }
+
+.site-nav a {
+  display: block;
+  min-height: 3rem;          /* big enough to tap with a thumb */
+  padding: 0.75rem 0.25rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 5px solid transparent;
+}
+
+.site-nav a[aria-current="page"] {
+  border-bottom-color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* ---------- Main content ---------- */
+
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 0 0 0.5rem;
+}
+
+.intro {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.card p { margin: 0 0 0.5rem; }
+
+/* Shown wherever data hasn't been added yet */
+.no-data {
+  background: var(--green-light);
+  border-left: 5px solid var(--green-dark);
+  padding: 0.75rem;
+  font-weight: 600;
+  margin: 0.75rem 0;
+}
+
+/* Date and source line under every number */
+.source-line {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+}
+
+/* For later: big price figure with up/down arrow */
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.price .unit { font-size: 1.1rem; font-weight: 600; color: var(--muted); }
+
+.change-up { color: var(--up); font-weight: 700; }
+.change-down { color: var(--down); font-weight: 700; }
+.change-none { color: var(--muted); font-weight: 600; }
+
+h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid var(--border);
+}
+
+.week-label { font-weight: 700; margin: 1rem 0 0; }
+
+.label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+  margin: 1rem 0 0.25rem;
+}
+
+.reference {
+  background: var(--green-light);
+  border-radius: 8px;
+  padding: 0.25rem 0.75rem 0.75rem;
+}
+
+.reference p { margin: 0.25rem 0; }
+.year-ago { font-size: 0.95rem; color: var(--muted); }
+
+.grade-list { list-style: none; margin: 0; padding: 0; }
+
+/* Each price row: name on the left, big price on the right,
+   then the changes and per-head value on full-width lines underneath. */
+.grade-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  column-gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.grade-row > div:first-child { flex: 1 1 0; min-width: 0; }
+.grade-price { display: contents; }
+.grade-code { display: block; font-size: 1.2rem; font-weight: 700; }
+.grade-hint { display: block; font-size: 0.9rem; color: var(--muted); }
+.grade-value { display: block; font-size: 1.4rem; font-weight: 700; }
+.grade-row .grade-value { flex: 0 0 auto; text-align: right; }
+.grade-change { display: block; font-size: 0.95rem; }
+.grade-row .grade-change,
+.grade-row .per-head { flex: 0 0 100%; }
+.grade-row .grade-change:first-of-type { margin-top: 0.3rem; }
+
+/* Two or three big buttons side by side, e.g. area or time period */
+.toggle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.toggle button {
+  flex: 1 1 auto;
+  min-height: 3rem;
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--green-dark);
+  background: var(--card);
+  border: 2px solid var(--green-dark);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toggle button[aria-pressed="true"] {
+  background: var(--green-dark);
+  color: #fff;
+}
+
+.toggle button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.chart-box {
+  position: relative;
+  height: 20rem;
+  margin: 0.75rem 0;
+}
+
+.note { font-size: 0.95rem; color: var(--muted); }
+
+/* "Read this first" box at the top of Today's page */
+.card.warning {
+  border: 2px solid #8a6d1f;
+  background: #fbf3dc;
+}
+
+/* Says plainly when something isn't available */
+.unavailable {
+  background: #f1efea;
+  border-left: 5px solid var(--muted);
+  padding: 0.75rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.unavailable p { margin: 0 0 0.5rem; }
+.unavailable p:last-child { margin: 0; }
+
+.grade-line {
+  background: var(--green-light);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+}
+
+.farm-note {
+  font-weight: 600;
+  border-left: 5px solid var(--green-dark);
+  padding-left: 0.75rem;
+}
+
+.per-head {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--green-dark);
+}
+
+.region-name { font-size: 1.05rem; }
+
+/* Carcase weight box */
+.calc {
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.calc label { display: block; font-weight: 600; margin-bottom: 0.4rem; }
+
+.calc-row { display: flex; align-items: center; gap: 0.5rem; }
+
+.calc input {
+  width: 7rem;
+  min-height: 3rem;
+  padding: 0.4rem 0.6rem;
+  font: inherit;
+  font-size: 1.2rem;
+  border: 2px solid var(--green-dark);
+  border-radius: 8px;
+}
+
+.calc input:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* Local markets */
+.market-list { list-style: none; margin: 0; padding: 0; }
+.market-list li { padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
+.market-list li:last-child { border-bottom: 0; }
+.market-list p { margin: 0 0 0.4rem; }
+.market-name { font-size: 1.15rem; font-weight: 700; }
+
+/* Chart placeholder box on the history page */
+.chart-placeholder {
+  height: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  border: 2px dashed var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 0.75rem 0;
+}
+
+/* Plain-English word list */
+.glossary dt { font-weight: 700; margin-top: 0.75rem; }
+.glossary dd { margin: 0.15rem 0 0; }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 1.25rem 1rem 2rem;
+  font-size: 0.95rem;
+}
+
+.site-footer .inner {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.site-footer h2 {
+  font-size: 1.05rem;
+  margin: 1rem 0 0.25rem;
+}
+
+.site-footer h2:first-child { margin-top: 0; }
+
+.site-footer p { margin: 0 0 0.5rem; }
+
+.site-footer ul { margin: 0; padding-left: 1.25rem; }
+
+.site-footer a { color: #fff; }
+
+/* ---------- Layout grids (one column on phones, more on laptops) ---------- */
+
+.card-grid { display: grid; gap: 1.25rem; }
+.card-grid > .card { margin-bottom: 0; }
+
+/* Steers and heifers side by side on wide screens */
+.cat-grid { display: grid; gap: 0 1.5rem; }
+
+/* History page: filters + charts */
+.history-layout { display: grid; gap: 1.25rem; }
+.history-layout .card { margin-bottom: 0; }
+.charts { display: grid; gap: 1.25rem; min-width: 0; }
+
+.filter-group { margin-bottom: 1rem; }
+.filter-group:last-child { margin-bottom: 0; }
+.filter-title { font-weight: 700; margin: 0 0 0.35rem; }
+.filter-help { font-size: 0.9rem; color: var(--muted); margin: 0.35rem 0 0; }
+.filter-group .toggle { margin: 0; }
+
+.date-range { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.5rem; }
+.date-range label { font-size: 0.9rem; font-weight: 600; }
+.date-range input, .period-picker select, .season-grade select {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.4rem;
+  font: inherit;
+  border: 2px solid var(--green-dark);
+  border-radius: 8px;
+  background: var(--card);
+}
+
+.period-picker { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 0.75rem 0; }
+.period-picker label, .season-grade label { font-size: 0.9rem; font-weight: 600; display: block; }
+.season-grade { margin: 0.5rem 0 0.75rem; max-width: 20rem; }
+
+.summary {
+  background: var(--green-light);
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin: 0.75rem 0 0;
+}
+.summary p { margin: 0 0 0.4rem; }
+.summary p:last-child { margin: 0; }
+
+.not-enough { margin: 0.75rem 0; }
+[hidden] { display: none !important; }
+
+@media (min-width: 900px) {
+  main { max-width: 76rem; }
+  main.page-narrow { max-width: 48rem; }
+
+  .site-header { padding: 0 1.5rem; }
+  .header-inner {
+    max-width: 76rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .site-title { margin: 0; }
+  .site-nav ul { gap: 0.25rem; }
+  .site-nav a { padding: 0.9rem 1.5rem; }
+
+  .card-grid { grid-template-columns: 1fr 1fr; }
+  .card-grid > .span-2 { grid-column: 1 / -1; }
+  .cat-grid { grid-template-columns: 1fr 1fr; }
+  .card > .toggle { max-width: 32rem; }
+
+  .site-footer .inner { max-width: 76rem; }
+}
+
+@media (min-width: 1000px) {
+  .history-layout { grid-template-columns: 19rem minmax(0, 1fr); align-items: start; }
+  .filters { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; }
+  .chart-box { height: 26rem; }
+  .chart-box.short { height: 22rem; }
+}
+
+@media (min-width: 1400px) {
+  .season-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+  .season-pair .card { margin-bottom: 0; }
+}
+
+/* ---------- Outlook page ---------- */
+
+.review-line { font-size: 0.95rem; margin: -0.75rem 0 1.25rem; }
+.overdue { display: block; color: var(--down); font-weight: 700; }
+
+.summary-card { background: var(--green-light); }
+
+.outlook-col h2 { padding-bottom: 0.4rem; border-bottom: 4px solid currentColor; }
+.up-col h2 { color: var(--up); }
+.down-col h2 { color: var(--down); }
+
+.point-list { list-style: none; margin: 0; padding: 0; }
+.point { padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
+.point:last-child { border-bottom: 0; }
+.point p { margin: 0.2rem 0 0.35rem; }
+.point-topic {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+.point-source { display: block; font-size: 0.85rem; color: var(--muted); }
+.summary-card .point-source { display: inline; }
+
+/* Warning shown at the top of every page when prices are more than two weeks old */
+.stale-banner {
+  background: #fdecea;
+  border: 3px solid var(--down);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+}
+.stale-banner p { margin: 0 0 0.4rem; }
+.stale-banner p:last-child { margin: 0; }
+.stale-banner strong { color: var(--down); font-size: 1.1rem; }
+
+/* History filters: a fold-away panel on phones */
+#filter-details > summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 3rem;
+  padding: 0.25rem 2rem 0.25rem 0;
+  position: relative;
+}
+#filter-details > summary::-webkit-details-marker { display: none; }
+#filter-details > summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0.25rem;
+  top: 0.2rem;
+  font-size: 1.5rem;
+  color: var(--green-dark);
+}
+#filter-details[open] > summary::after { content: "▴"; }
+#filter-details[open] > summary { margin-bottom: 0.75rem; }
+.summary-title { display: block; font-size: 1.35rem; font-weight: 700; }
+.summary-current { display: block; font-size: 0.95rem; color: var(--muted); }
+
+@media (min-width: 1000px) {
+  #filter-details > summary { pointer-events: none; }
+  #filter-details > summary::after, .summary-current { display: none; }
+}

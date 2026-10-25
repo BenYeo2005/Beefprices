@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Price history – Beef price dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+    <p class="site-title">Beef price dashboard</p>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Today</a></li>
+        <li><a href="history.html" aria-current="page">History</a></li>
+        <li><a href="outlook.html">Outlook</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Price history</h1>
+    <p class="intro">How prices have moved over time, and which times of year are usually strongest. Tap or hover over a chart to see exact prices and dates. Your choices are remembered on this device.</p>
+
+    <div class="history-layout">
+
+      <!-- Filters (left column on a laptop, top of the page on a phone) -->
+      <section class="card filters" aria-label="Filters">
+        <details id="filter-details" open>
+        <summary>
+          <span class="summary-title">Choose what to show</span>
+          <span class="summary-current" id="filter-current"></span>
+        </summary>
+
+        <div class="filter-group">
+          <p class="filter-title">Type of sale</p>
+          <div class="toggle" role="group" aria-label="Type of sale">
+            <button type="button" data-set="type" data-value="finished">Finished (deadweight)</button>
+            <button type="button" data-set="type" data-value="store">Store cattle</button>
+            <button type="button" data-set="type" data-value="calves">Calves</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <p class="filter-title">Stock</p>
+          <div class="toggle" role="group" aria-label="Stock" id="stock-buttons"></div>
+          <p class="filter-help">Breed: all breeds together. A split for Belgian Blue x (Continental cross) and Hereford x (Native cross) isn't available in our data.</p>
+        </div>
+
+        <div class="filter-group" data-for="finished">
+          <p class="filter-title">Area</p>
+          <div class="toggle" role="group" aria-label="Area">
+            <button type="button" data-set="region" data-value="England and Wales">England and Wales</button>
+            <button type="button" data-set="region" data-value="Great Britain">Great Britain</button>
+          </div>
+        </div>
+
+        <div class="filter-group" data-for="finished">
+          <p class="filter-title">Grades (tap to add or remove)</p>
+          <div class="toggle" role="group" aria-label="Grades" id="grade-buttons"></div>
+          <p class="filter-help">R4L is the standard grade prices are quoted for. O+ and −O are the lower shape grades dairy-crosses usually get (from the farm's own experience). See "What these words mean" on the Today page.</p>
+        </div>
+
+        <div class="filter-group" data-for="store">
+          <p class="filter-title">Price shown</p>
+          <div class="toggle" role="group" aria-label="Price shown">
+            <button type="button" data-set="measure" data-value="average_gbp_per_head">Per head</button>
+            <button type="button" data-set="measure" data-value="average_p_per_kg">Per kg live</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <p class="filter-title">Time range</p>
+          <div class="toggle" role="group" aria-label="Time range">
+            <button type="button" data-set="range" data-value="1">1 year</button>
+            <button type="button" data-set="range" data-value="3">3 years</button>
+            <button type="button" data-set="range" data-value="5">5 years</button>
+            <button type="button" data-set="range" data-value="all">All</button>
+            <button type="button" data-set="range" data-value="custom">Custom</button>
+          </div>
+          <div class="date-range" id="custom-range" hidden>
+            <div>
+              <label for="date-from">From</label>
+              <input type="date" id="date-from">
+            </div>
+            <div>
+              <label for="date-to">To</label>
+              <input type="date" id="date-to">
+            </div>
+          </div>
+        </div>
+        </details>
+      </section>
+
+      <div class="charts">
+
+        <!-- Main price chart -->
+        <section class="card">
+          <h2 id="main-title">Price over time</h2>
+          <div class="chart-box">
+            <canvas id="main-chart" aria-label="Line chart of prices over time"></canvas>
+          </div>
+          <div class="summary" id="main-summary"><p>Loading prices…</p></div>
+          <p class="note" id="main-note"></p>
+          <p class="source-line" id="main-source"></p>
+        </section>
+
+        <!-- Seasonal pattern -->
+        <section class="card" id="seasonal">
+          <h2>Seasonal pattern</h2>
+          <p>Which times of year are usually strongest and weakest. Uses monthly averages for the stock, area and time range chosen above.</p>
+          <div class="season-grade" data-for="finished">
+            <label for="season-grade">Grade for the seasonal charts</label>
+            <select id="season-grade"></select>
+          </div>
+          <div class="unavailable not-enough" id="season-unavailable" hidden></div>
+          <div id="season-content">
+            <h3>Each year, January to December</h3>
+            <div class="chart-box">
+              <canvas id="overlay-chart" aria-label="Chart with one line per year, January to December"></canvas>
+            </div>
+            <div class="summary" id="overlay-summary"></div>
+
+            <div class="season-pair">
+              <div>
+                <h3>Usual pattern through the year</h3>
+                <p class="note">How far each month usually sits above or below the 12-month average around it. This takes out long-term rises and falls, so it shows only the pattern through the year.</p>
+                <div class="chart-box short">
+                  <canvas id="month-chart" aria-label="Bar chart of how each month compares with the yearly average"></canvas>
+                </div>
+                <div class="summary" id="month-summary"></div>
+              </div>
+
+              <div>
+                <h3>Compare periods</h3>
+                <p class="note">Pick a period and see its average price in each year.</p>
+                <div class="period-picker">
+                  <div>
+                    <label for="period-start">From</label>
+                    <select id="period-start"></select>
+                  </div>
+                  <div>
+                    <label for="period-end">To</label>
+                    <select id="period-end"></select>
+                  </div>
+                </div>
+                <div class="chart-box short">
+                  <canvas id="period-chart" aria-label="Bar chart of the chosen period's average price in each year"></canvas>
+                </div>
+                <div class="summary" id="period-summary"></div>
+              </div>
+            </div>
+          </div>
+          <p class="source-line" id="season-source"></p>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <h2>When the data was last updated</h2>
+      <p id="last-updated">No price data has been added yet.</p>
+      <h2>Where the data comes from</h2>
+      <ul>
+        <li>Finished cattle prices: <a href="https://ahdb.org.uk/beef/gb-deadweight-cattle-prices">AHDB (the Agriculture and Horticulture Development Board, the farming levy body), GB deadweight cattle prices</a> (Great Britain; Northern Ireland not included)</li>
+        <li>Store cattle and calf prices: <a href="https://www.herefordmarket.co.uk/market-reports/">Hereford Market Auctioneers, sale reports</a></li>
+      </ul>
+      <p>Steers and heifers only. Cows and young bulls are not included.</p>
+      <p>All prices are market averages. What any one animal makes depends on its weight, grade, buyer and the deductions taken off, so your own prices will differ. This site is for information only. It is not advice on when to buy or sell.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/history.js"></script>
+</body>
+</html>

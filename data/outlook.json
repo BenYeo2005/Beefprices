@@ -1,0 +1,244 @@
+{
+  "about": "Content for the Price outlook page. Update monthly. Every point lists one or more source ids from the 'sources' list. Only write figures that appear in the source. Dates are YYYY-MM-DD, or YYYY-MM when the source gives only a month.",
+  "last_reviewed": "2026-10-25",
+  "next_review_due": "2026-11-25",
+
+  "summary": [
+    {
+      "text": "Most sources expect the number of finished cattle to stay tight through 2026 and into 2027, and AHDB says this is likely to keep supporting cattle prices.",
+      "sources": ["ahdb_outlook", "ahdb_calf_regs"]
+    },
+    {
+      "text": "Against that, shoppers buying less beef at high prices, more imports and a wide gap between British and Irish prices could hold back further rises.",
+      "sources": ["ahdb_outlook", "ahdb_irish_gap"]
+    },
+    {
+      "text": "None of the sources here gives a firm price forecast, and nothing on this page is a prediction of what prices will do.",
+      "sources": []
+    }
+  ],
+
+  "up": [
+    {
+      "topic": "Cattle numbers and supply",
+      "text": "AHDB forecasts that 1.99 million prime cattle (steers, heifers and young bulls) will be slaughtered in 2026 (down 0.8% on 2025) and 1.98 million in 2027 (down a further 0.9%). It says historically tight supplies are likely to continue to support cattle prices.",
+      "sources": ["ahdb_outlook"]
+    },
+    {
+      "topic": "Cattle numbers and supply",
+      "text": "Across Great Britain, cattle aged 24–30 months (the main age for slaughter) were 3% fewer than in 2025.",
+      "sources": ["fw_tight_supplies"]
+    },
+    {
+      "topic": "Cattle numbers and supply",
+      "text": "Total calf registrations in the first half of 2026 were 1.2% lower than a year earlier (about 17,800 fewer calves). AHDB says beef supply is likely to remain tight through 2026 and 2027.",
+      "sources": ["ahdb_calf_regs"]
+    },
+    {
+      "topic": "Cattle numbers and supply",
+      "text": "AHDB's modelling suggests bluetongue could mean about 14,000 fewer calves in 2027 (3.1%). The effect on beef production would not be felt until 2029, so this is outside the next 12 months.",
+      "sources": ["agriland_ahdb_outlook"]
+    },
+    {
+      "topic": "Demand",
+      "text": "Prices usually rise in the autumn ahead of stronger demand in the run-up to Christmas. Farmers Weekly reported steers up nearly 8p in the week ending 26 September, to 631p/kg deadweight.",
+      "sources": ["fw_tight_supplies"]
+    },
+    {
+      "topic": "Demand",
+      "text": "In the 12 weeks to 4 October 2026, shoppers spent 1.6% more on beef than a year earlier. Steak sales grew 7.9%.",
+      "sources": ["ahdb_retail"]
+    },
+    {
+      "topic": "Irish and EU prices",
+      "text": "Irish abattoir (\"factory\") prices were rising in mid-October. Their starting prices for steers were €6.70–6.90 per kg, and they were paying 10–20 euro cents per kg more than that to secure cattle. The Irish Farmers' Association said supplies were tightening.",
+      "sources": ["ifa_16oct"]
+    },
+    {
+      "topic": "Irish and EU prices",
+      "text": "EU beef production fell 2% in the first half of 2026.",
+      "sources": ["fw_tight_supplies"]
+    },
+    {
+      "topic": "Imports and trade",
+      "text": "Rabobank forecasts global beef production to fall about 2% in 2026, with output declining in Europe, the US, Brazil and China.",
+      "sources": ["rabobank_q3"]
+    }
+  ],
+
+  "down": [
+    {
+      "topic": "Demand",
+      "text": "AHDB says high retail prices are holding back how much beef people buy, especially premium cuts. It quotes a 4.6% fall in retail volumes over the past 52 weeks, and forecasts total beef volumes 2% lower in 2027 than in 2026.",
+      "sources": ["ahdb_outlook"]
+    },
+    {
+      "topic": "Demand",
+      "text": "In the latest 12 weeks (to 4 October 2026), the amount of beef bought was 0.4% lower than a year earlier, while the average price paid was 2.0% higher.",
+      "sources": ["ahdb_retail"]
+    },
+    {
+      "topic": "Imports and trade",
+      "text": "AHDB forecasts UK beef imports in 2026 to be 3% higher than in 2025. It says a changing mix of imports could weigh on any significant price growth.",
+      "sources": ["ahdb_outlook"]
+    },
+    {
+      "topic": "Imports and trade",
+      "text": "The EU suspended imports of Brazilian animal products from 3 September 2026. Farmers Weekly reports that Brazilian beef no longer going to the EU could be sent to the UK instead. Rabobank estimates roughly 10,000 tonnes a month of Brazilian beef would need new markets.",
+      "sources": ["fw_tight_supplies", "rabobank_q3"]
+    },
+    {
+      "topic": "Irish and EU prices",
+      "text": "British steer prices were 66p/kg above Irish prices in the last week of August, against an average gap of 34p over the previous 52 weeks. AHDB says a wider gap could draw more Irish beef into the UK market.",
+      "sources": ["ahdb_irish_gap", "ahdb_outlook"]
+    },
+    {
+      "topic": "Cattle numbers and supply",
+      "text": "Carcases of prime cattle are about 10kg heavier on average so far this year, so AHDB expects UK beef production in 2026 to be 1.0% up on 2025 even with fewer cattle slaughtered.",
+      "sources": ["ahdb_outlook"]
+    },
+    {
+      "topic": "Cattle numbers and supply",
+      "text": "AHDB says a larger group of 6–18-month-old cattle may briefly increase the number of cattle ready for slaughter, before supply tightens again about six months later as the smaller calf crop comes through.",
+      "sources": ["ahdb_calf_regs"]
+    },
+    {
+      "topic": "World prices",
+      "text": "Rabobank reports that global cattle prices eased back in July from the record levels reached earlier in 2026, and says prices may level off or ease further over the coming months (its word is \"consolidation\").",
+      "sources": ["rabobank_q3"]
+    }
+  ],
+
+  "watch": [
+    {
+      "topic": "Feed costs",
+      "text": "The traded (\"futures\") price for UK feed wheat for delivery in November 2026 was £206.00 a tonne in AHDB's 12 October report. Feed wheat delivered to Avonmouth in November was quoted at £217.50 a tonne.",
+      "sources": ["ahdb_arable_12oct"]
+    },
+    {
+      "topic": "Forage costs",
+      "text": "In the latest weekly prices, big bale hay was £106 a tonne (£14 less than a year earlier), big square barley straw £89 a tonne (£3 less) and wheat straw £74 a tonne (£8 less). These are prices at the farm, before haulage.",
+      "sources": ["ahdb_hay_straw"]
+    },
+    {
+      "topic": "Other farm costs",
+      "text": "In May 2026 the NFU Livestock Board chair warned that what farmers are paid was falling while costs for fuel and fertiliser were rising. This is an older source, so check for something newer.",
+      "sources": ["nfu_may"]
+    },
+    {
+      "topic": "Weather",
+      "text": "The Met Office outlook for October to December 2026 gives a 40% chance of a wet period (double the normal chance) and a 30% chance of a mild one (1.5 times normal). It says there is still a chance of cold weather later in the period, and windy weather is more likely than usual. The next outlook was due on 26 October 2026.",
+      "sources": ["met_office_ond"]
+    }
+  ],
+  "watch_note": "These affect finishing costs, housing and forage more than the cattle price itself. The sources don't say which way they will push finished cattle prices, so they aren't put in either column.",
+
+  "dairy_cross": [
+    {
+      "text": "None of the sources here gives a separate outlook for dairy-cross cattle. They sell into the same finished market. In the farm's own experience (not a published figure) they usually grade around O+ to R rather than R4L, so expect prices below the R4L headline.",
+      "sources": ["own_data"],
+      "live": "grade_gap"
+    },
+    {
+      "text": "Dairy-beef calf registrations fell for the first time in the first half of 2026 (down 0.9%), with heifers down 1.7% and bulls down 0.2%. AHDB links the gap between heifers and bulls to more use of sexed beef semen. Fewer dairy-cross calves now means fewer dairy-cross cattle to finish later.",
+      "sources": ["ahdb_calf_regs"]
+    },
+    {
+      "text": "Calf prices at auction were very high in summer 2026, with reports of calves making up to £1,000. Our calves come from a nearby dairy at a fixed price, so higher calf prices don't change what we pay, but they do show how much other buyers value these calves.",
+      "sources": ["fw_calves"]
+    }
+  ],
+
+  "limitations": [
+    "This page brings together what other people have published. It is not a forecast and should not be used as one.",
+    "Sources were checked on the 'last reviewed' date above. Some links (the hay and straw prices and the Met Office page) always show the newest version, so they may have changed since.",
+    "Irish prices are in euros per kg and AHDB's GB prices are in pence per kg, so they are not directly comparable except through AHDB's own price-gap figures."
+  ],
+
+  "sources": {
+    "ahdb_outlook": {
+      "title": "Beef market outlook",
+      "publisher": "AHDB",
+      "url": "https://ahdb.org.uk/beef-market-outlook",
+      "published": "2026-10"
+    },
+    "agriland_ahdb_outlook": {
+      "title": "UK beef market faces tight supplies, high prices in 2026 (reporting AHDB's outlook)",
+      "publisher": "Agriland",
+      "url": "https://www.agriland.co.uk/farming-news/uk-beef-market-faces-tight-supplies-high-prices-in-2026/",
+      "published": "2026-10-17"
+    },
+    "ahdb_calf_regs": {
+      "title": "Dairy-beef calf registrations fall for the first time while suckler herd contraction slows",
+      "publisher": "AHDB",
+      "url": "https://ahdb.org.uk/news/dairy-beef-calf-registrations-fall-for-the-first-time-while-suckler-herd-contraction-slows-beef-market-update",
+      "published": "2026-09-11"
+    },
+    "ahdb_irish_gap": {
+      "title": "A widening price gap between GB and Irish cattle prices",
+      "publisher": "AHDB",
+      "url": "https://ahdb.org.uk/news/a-widening-price-gap-between-gb-and-irish-cattle-prices-beef-market-update",
+      "published": "2026-09-04"
+    },
+    "ahdb_retail": {
+      "title": "Red meat retail performance – 4 October 2026",
+      "publisher": "AHDB",
+      "url": "https://ahdb.org.uk/news/consumer-insight-red-meat-retail-performance-4-october-2026",
+      "published": "2026-10-21"
+    },
+    "fw_tight_supplies": {
+      "title": "Tight supplies underpin slightly firmer beef market",
+      "publisher": "Farmers Weekly",
+      "url": "https://www.fwi.co.uk/business/markets-and-trends/meat-prices/tight-supplies-underpin-slightly-firmer-beef-market",
+      "published": "2026-10-07"
+    },
+    "fw_calves": {
+      "title": "Calf prices stay strong as buyers chase depleted numbers",
+      "publisher": "Farmers Weekly",
+      "url": "https://www.fwi.co.uk/business/markets-and-trends/meat-prices/calf-prices-stay-strong-as-buyers-chase-depleted-numbers",
+      "published": "2026-08-12"
+    },
+    "ifa_16oct": {
+      "title": "Beef & Sheep Update 16th October",
+      "publisher": "Irish Farmers' Association",
+      "url": "https://www.ifa.ie/markets-and-prices/beef-sheep-update-16th-october/",
+      "published": "2026-10-16"
+    },
+    "rabobank_q3": {
+      "title": "Global beef production forecast to fall by 2% this year (reporting Rabobank's quarterly beef report)",
+      "publisher": "Agriland",
+      "url": "https://www.agriland.co.uk/farming-news/global-beef-production-forecast-to-fall-by-2-this-year/",
+      "published": "2026-08-29"
+    },
+    "ahdb_arable_12oct": {
+      "title": "Arable Market Report – 12 October 2026",
+      "publisher": "AHDB",
+      "url": "https://ahdb.org.uk/news/arable-market-report-12-october-2026",
+      "published": "2026-10-12"
+    },
+    "ahdb_hay_straw": {
+      "title": "Hay and straw prices (data from the British Hay & Straw Merchants' Association), week of 25 October 2026",
+      "publisher": "AHDB",
+      "url": "https://ahdb.org.uk/dairy/hay-and-straw-prices",
+      "published": "2026-10-25"
+    },
+    "nfu_may": {
+      "title": "NFU warns beef sector facing 'critical period' as cattle prices fall",
+      "publisher": "FarmingUK",
+      "url": "https://www.farminguk.com/news/nfu-warns-beef-sector-facing-critical-period-as-cattle-prices-fall_68523.html",
+      "published": "2026-05-20"
+    },
+    "met_office_ond": {
+      "title": "UK 3-month Outlook, October–December 2026",
+      "publisher": "Met Office",
+      "url": "https://www.metoffice.gov.uk/services/public-sector/contingency-planners",
+      "published": "2026-09-28"
+    },
+    "own_data": {
+      "title": "GB deadweight cattle prices (weekly)",
+      "publisher": "AHDB",
+      "url": "https://ahdb.org.uk/beef/gb-deadweight-cattle-prices",
+      "published": "from data/sources.csv"
+    }
+  }
+}
