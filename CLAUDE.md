@@ -69,6 +69,15 @@ A beef price dashboard website for a beef finishing farm in north Herefordshire 
 - Anything from the owner's own knowledge (e.g. dairy-crosses grading O+ to R) must be labelled as the farm's experience, not as a published fact.
 - Use the UK NFU (nfuonline.com), not the US National Farmers Union.
 
+## Seasonal pattern (decided 25 Oct 2026)
+
+- The owner asked for proportional seasonality only, ignoring price level, and only if a real pattern exists. Tested: each month's R4L price as a % of the 2x12 centred 12-month average, England and Wales steers and heifers, 2014–2026.
+- Findings:
+  - Over the whole period there is no pattern: every month within about ±1%, and a permutation test gives p≈0.98.
+  - 2014–2019 had a spring low and autumn high; 2020–2026 the reverse. Each sub-period is only borderline (p≈0.03–0.06) and based on 5–6 years.
+- Decision: no seasonal charts on the site. History and Outlook carry a fixed note saying there's no consistent pattern. History keeps only "Compare the same months across years", which shows each year without claiming a pattern.
+- Re-check about once a year. Only bring a seasonal chart back if a pattern holds across the whole period, and the owner agrees.
+
 ## Update routines (the owner will just say these words; see UPDATING.md for their version)
 
 Keep a task list, explain each step in plain English, and finish with a short summary: the new latest prices, what moved, and anything not done.

@@ -1,5 +1,5 @@
 // Price outlook page. The words come from data/outlook.json (updated monthly);
-// the seasonal pattern and grade gaps are worked out live from the AHDB price files.
+// the grade gaps are worked out live from the AHDB price file.
 
 function sourceDate(published, weeklySource) {
   if (published === "from data/sources.csv") return weeklySource ? ukDate(weeklySource.source_last_updated) : "";
@@ -43,43 +43,16 @@ function gradeGapText(weekly) {
   return parts.length ? `In the week ending ${longDate(latest, false)} (England and Wales), ${parts.join("; ")}.` : "";
 }
 
-function showSeason(monthly, monthlySource) {
-  const years = {};
-  monthly.filter(r => r.category === "Steers" && r.region === "England and Wales").forEach(r => {
-    const v = num(r.R4L);
-    if (v === null) return;
-    const y = Number(r.month.slice(0, 4));
-    (years[y] ||= Array(12).fill(null))[Number(r.month.slice(5, 7)) - 1] = v;
-  });
-  const yearNums = Object.keys(years).map(Number).sort((a, b) => a - b);
-  const last = yearNums[yearNums.length - 1];
-  const recent = Object.fromEntries(yearNums.filter(y => y >= last - 5).map(y => [y, years[y]]));
-  const what = "R4L steer";
-  const recentSeason = seasonalIndex(recent);
-  const allSeason = seasonalIndex(years);
-  document.getElementById("season").innerHTML =
-    (recentSeason ? `<p class="label">Last few years</p>${describeSeason(recentSeason, what)}` : "") +
-    (allSeason ? `<p class="label">All years since ${yearNums[0]}</p>${describeSeason(allSeason, what)}` : "") +
-    (!recentSeason && !allSeason ? `<p class="no-data">Not enough monthly prices to work out a pattern.</p>` : "");
-  if (monthlySource) {
-    document.getElementById("season-source").innerHTML =
-      `Source: <a href="${monthlySource.source_url}">AHDB, GB deadweight cattle prices (monthly)</a>, published ${ukDate(monthlySource.source_last_updated)}. ` +
-      `Calculated by this site: each month compared with the 12-month average around it.`;
-  }
-}
-
 async function start() {
   try {
-    const [response, weekly, monthly, sources] = await Promise.all([
+    const [response, weekly, sources] = await Promise.all([
       fetch("data/outlook.json", { cache: "no-cache" }),
       loadCSV("data/deadweight_weekly.csv"),
-      loadCSV("data/deadweight_monthly.csv"),
       loadCSV("data/sources.csv"),
     ]);
     if (!response.ok) throw new Error("Could not load outlook");
     const outlook = await response.json();
     const weeklySource = sources.find(s => s.dataset === "deadweight_weekly");
-    const monthlySource = sources.find(s => s.dataset === "deadweight_monthly");
 
     const reviewed = longDate(outlook.last_reviewed, false);
     const due = longDate(outlook.next_review_due, false);
@@ -98,7 +71,6 @@ async function start() {
     document.getElementById("dairy-list").innerHTML =
       pointList(outlook.dairy_cross, outlook, weeklySource, { grade_gap: gradeGapText(weekly) });
     document.getElementById("limitations").innerHTML = outlook.limitations.map(l => `<li>${l}</li>`).join("");
-    showSeason(monthly, monthlySource);
   } catch (e) {
     document.getElementById("summary").innerHTML =
       `<p class="no-data">The outlook can't be shown just now. Try refreshing the page. If that doesn't help, let the person who runs this site know.</p>`;

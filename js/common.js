@@ -72,55 +72,6 @@ function changeHTML(now, before, label, unit = "p") {
   return `<span class="change-none">No change</span> ${label}`;
 }
 
-// ---------- Seasonal pattern (used by the History and Outlook pages) ----------
-
-const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July",
-                     "August", "September", "October", "November", "December"];
-
-// years: { 2024: [12 monthly prices or null], ... }
-// For each month, how far the price sat above or below the 12-month average centred on it
-// (a "2x12 centred moving average"), which takes out long-term rises and falls.
-// Returns null if any month has fewer than two years to go on.
-function seasonalIndex(years) {
-  const seq = [];
-  Object.keys(years).map(Number).sort((a, b) => a - b)
-    .forEach(y => years[y].forEach((v, m) => seq.push({ year: y, month: m, v })));
-  const byMonth = MONTH_NAMES.map(() => []);
-  for (let t = 6; t < seq.length - 6; t++) {
-    const w = seq.slice(t - 6, t + 7).map(p => p.v);
-    if (w.some(v => v === null)) continue;
-    const ma = (0.5 * w[0] + w.slice(1, 12).reduce((a, b) => a + b, 0) + 0.5 * w[12]) / 12;
-    byMonth[seq[t].month].push({ year: seq[t].year, diff: (seq[t].v / ma - 1) * 100 });
-  }
-  if (byMonth.some(list => list.length < 2)) return null;
-  const index = byMonth.map(list => {
-    const diffs = list.map(x => x.diff);
-    return {
-      avg: diffs.reduce((a, b) => a + b, 0) / diffs.length,
-      above: diffs.filter(d => d > 0).length,
-      below: diffs.filter(d => d < 0).length,
-      n: diffs.length,
-    };
-  });
-  const allYears = [...new Set(byMonth.flat().map(x => x.year))].sort();
-  return { index, firstYear: allYears[0], lastYear: allYears[allYears.length - 1] };
-}
-
-// Plain-English sentence about the strongest and weakest months.
-// Only says "usually" when it happened in more than half the years, and says plainly when the pattern is weak.
-function describeSeason(season, what) {
-  const index = season.index;
-  const hi = index.reduce((a, b, i) => (b.avg > index[a].avg ? i : a), 0);
-  const lo = index.reduce((a, b, i) => (b.avg < index[a].avg ? i : a), 0);
-  const hiWord = index[hi].above > index[hi].n / 2 ? "usually strongest" : "strongest on average";
-  const loWord = index[lo].below > index[lo].n / 2 ? "usually weakest" : "weakest on average";
-  const weak = index[hi].avg < 1 && -index[lo].avg < 1;
-  return (weak ? `<p>There's no strong seasonal pattern here: on average no month sits more than 1% above or below the 12-month average.</p>` : "") +
-    `<p>From ${season.firstYear} to ${season.lastYear}, ${what} prices were ${hiWord} in ` +
-    `<strong>${MONTH_NAMES[hi]}</strong> (on average ${index[hi].avg.toFixed(1)}% above the 12-month average; above it in ${index[hi].above} of ${index[hi].n} years) ` +
-    `and ${loWord} in <strong>${MONTH_NAMES[lo]}</strong> (on average ${Math.abs(index[lo].avg).toFixed(1)}% below; below it in ${index[lo].below} of ${index[lo].n} years).</p>`;
-}
-
 // Remember a page's last-used filters on this device (browser storage).
 // If storage is blocked (e.g. private browsing), the page just uses its defaults.
 function loadPrefs(key) {

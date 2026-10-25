@@ -17,13 +17,12 @@ const STOCK = {
 };
 const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
                 "August", "September", "October", "November", "December"];
-const MONTHS_SHORT = MONTHS.map(m => m.slice(0, 3));
 const FIRST_WEEKLY = "2019-01-01";  // AHDB weekly prices by grade start in the first week of 2019
 
 const DEFAULTS = {
   type: "finished", stock: "Steers", calfStock: "Bull calves", region: "England and Wales",
   grades: ["R4L", "O+4L"], measure: "average_gbp_per_head", range: "5", from: "", to: "",
-  seasonGrade: "R4L", periodStart: 3, periodEnd: 5, allYears: "no",
+  seasonGrade: "R4L", periodStart: 3, periodEnd: 5,
 };
 
 const data = { weekly: [], monthly: [], store: [], calves: [], sources: [] };
@@ -51,7 +50,6 @@ function restoreState() {
   if (GRADES.some(g => g.code === s.seasonGrade)) st.seasonGrade = s.seasonGrade;
   if (s.periodStart >= 1 && s.periodStart <= 12) st.periodStart = Number(s.periodStart);
   if (s.periodEnd >= 1 && s.periodEnd <= 12) st.periodEnd = Number(s.periodEnd);
-  if (["no", "yes"].includes(s.allYears)) st.allYears = s.allYears;
   return st;
 }
 
@@ -313,7 +311,7 @@ function sourceLine(mode) {
   return `Source: <a href="https://www.herefordmarket.co.uk/market-reports/">Hereford Market Auctioneers sale reports</a>. Each figure is copied from that sale's report.`;
 }
 
-// ---------- Seasonal pattern ----------
+// ---------- Compare the same months across years ----------
 
 function drawSeasonal() {
   const unavailable = document.getElementById("season-unavailable");
@@ -326,8 +324,8 @@ function drawSeasonal() {
     unavailable.hidden = false;
     content.hidden = true;
     source.textContent = "";
-    unavailable.innerHTML = `<p><strong>Not enough history for seasonal patterns yet.</strong></p>` +
-      `<p>Hereford Market's reports online start on ${dayName(first)}, which isn't enough to compare the same months across different years. Choose Finished (deadweight) to see seasonal patterns.</p>`;
+    unavailable.innerHTML = `<p><strong>Not enough history to compare years yet.</strong></p>` +
+      `<p>Hereford Market's reports online start on ${dayName(first)}, so there isn't a full year to compare. Choose Finished (deadweight) to compare the same months across years.</p>`;
     return;
   }
 
@@ -357,100 +355,9 @@ function drawSeasonal() {
   unavailable.hidden = true;
   content.hidden = false;
 
-  // 1. This year against last year, January to December (earlier years only if asked for).
   const latestYear = yearList[yearList.length - 1];
-  const shownYears = state.allYears === "yes" ? yearList : yearList.filter(y => y >= latestYear - 1);
-  makeChart("overlay-chart", {
-    type: "line",
-    data: {
-      labels: MONTHS_SHORT,
-      datasets: shownYears.map((y, i) => {
-        const isLatest = y === latestYear, isPrev = y === latestYear - 1;
-        const shade = Math.round(200 - (120 * i) / Math.max(1, shownYears.length - 1));
-        const colour = isLatest ? "#1f4a2c" : isPrev ? "#b86e00" : `rgb(${shade},${shade},${shade - 8})`;
-        return {
-          label: String(y), data: years[y], borderColor: colour, backgroundColor: colour,
-          borderWidth: isLatest ? 4 : isPrev ? 3 : 1.5, pointRadius: isLatest || isPrev ? 3 : 0,
-          pointHitRadius: 8, spanGaps: false, tension: 0.1, order: isLatest ? 0 : isPrev ? 1 : 2,
-        };
-      }),
-    },
-    options: {
-      plugins: {
-        legend: { position: "bottom", labels: { font: { size: 13 }, boxWidth: 18 } },
-        tooltip: {
-          itemSort: (a, b) => Number(b.dataset.label) - Number(a.dataset.label),
-          callbacks: {
-            title: items => MONTHS[items[0].dataIndex],
-            label: item => `${item.dataset.label}: ${item.parsed.y === null ? "no figure" : fmt(item.parsed.y) + " per kg"}`,
-          },
-        },
-      },
-      scales: {
-        x: { ticks: { font: { size: 13 }, autoSkipPadding: 8, maxRotation: 0 }, grid: { display: false } },
-        y: { title: { display: true, text: "per kg deadweight (monthly average)", font: { size: 13 } }, ticks: { font: { size: 13 }, callback: v => v + "p" } },
-      },
-    },
-  });
 
-  const latestMonthIndex = years[latestYear].reduce((last, v, i) => (v !== null ? i : last), -1);
-  const prevValue = years[latestYear - 1]?.[latestMonthIndex] ?? null;
-  const nowValue = years[latestYear][latestMonthIndex];
-  let overlayText = `<p>Monthly ${what} prices. The thick green line is ${latestYear} so far and the orange line is ${latestYear - 1}` +
-    (state.allYears === "yes" && yearList.length > 2 ? `. Grey lines are earlier years (darker is more recent)` : "") + `.</p>`;
-  if (latestMonthIndex >= 0 && prevValue !== null) {
-    const d = nowValue - prevValue;
-    overlayText += `<p>In ${MONTHS[latestMonthIndex]} ${latestYear} it averaged ${fmt(nowValue)}, ${d >= 0 ? "up" : "down"} ${Math.abs(d).toFixed(1)}p on ${MONTHS[latestMonthIndex]} ${latestYear - 1} (${fmt(prevValue)}).</p>`;
-  }
-  document.getElementById("overlay-summary").innerHTML = overlayText;
-
-  // 2. Usual pattern: how far each month sits above or below the 12-month average centred on it
-  //    (a "2x12 centred moving average"). This takes out the long-term rise or fall, so a year of
-  //    steadily rising prices doesn't make December look strong and January weak.
-  const season = seasonalIndex(years);
-  const monthBox = document.getElementById("month-chart").parentElement;
-  const monthSummary = document.getElementById("month-summary");
-  if (!season) {
-    monthBox.hidden = true;
-    if (charts["month-chart"]) { charts["month-chart"].destroy(); delete charts["month-chart"]; }
-    monthSummary.innerHTML = `<p>This needs at least two years of every month, plus six months either side, so about three years of prices. Choose a longer time range.</p>`;
-  } else {
-    monthBox.hidden = false;
-    const index = season.index;
-    makeChart("month-chart", {
-      type: "bar",
-      data: {
-        labels: MONTHS_SHORT,
-        datasets: [{
-          label: "Above or below the 12-month average",
-          data: index.map(i => Math.round(i.avg * 100) / 100),
-          backgroundColor: index.map(i => (i.avg >= 0 ? "#1b7a32" : "#b3261e")),
-        }],
-      },
-      options: {
-        interaction: { mode: "index", intersect: false },
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              title: items => MONTHS[items[0].dataIndex],
-              label: item => {
-                const i = index[item.dataIndex];
-                return `${Math.abs(i.avg).toFixed(1)}% ${i.avg >= 0 ? "above" : "below"} the 12-month average (above it in ${i.above} of ${i.n} years)`;
-              },
-            },
-          },
-        },
-        scales: {
-          x: { ticks: { font: { size: 13 }, autoSkipPadding: 8, maxRotation: 0 }, grid: { display: false } },
-          y: { title: { display: true, text: "% above or below 12-month average", font: { size: 13 } }, ticks: { font: { size: 13 }, callback: v => v + "%" } },
-        },
-      },
-    });
-    monthSummary.innerHTML = describeSeason(season, what);
-  }
-
-  // 3. Compare periods: the chosen months' average in each year.
+  // Compare periods: the chosen months' average in each year.
   const s = Math.min(state.periodStart, state.periodEnd) - 1, e = Math.max(state.periodStart, state.periodEnd) - 1;
   const periodName = s === e ? MONTHS[s] : `${MONTHS[s]} to ${MONTHS[e]}`;
   const periods = yearList.map(y => {

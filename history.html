@@ -24,7 +24,7 @@
 
   <main>
     <h1>Price history</h1>
-    <p class="intro">How prices have moved over time, and which times of year are usually strongest. Tap or hover over a chart to see exact prices and dates. Your choices are remembered on this device.</p>
+    <p class="intro">How prices have moved over time, and how the same months compare from year to year. Tap or hover over a chart to see exact prices and dates. Your choices are remembered on this device.</p>
 
     <div class="history-layout">
 
@@ -111,54 +111,36 @@
 
         <!-- Seasonal pattern -->
         <section class="card" id="seasonal">
-          <h2>Seasonal pattern</h2>
-          <p>Which times of year are usually strongest and weakest. Uses monthly averages for the stock, area and time range chosen above.</p>
-          <div class="season-grade" data-for="finished">
-            <label for="season-grade">Grade for the seasonal charts</label>
-            <select id="season-grade"></select>
+          <h2>Is there a seasonal pattern?</h2>
+          <div class="unavailable">
+            <p><strong>No consistent seasonal pattern.</strong> We compared each month's R4L price with the 12-month average around it, for England and Wales steers and heifers, from 2014 to 2026.</p>
+            <p>From 2014 to 2019, prices tended to be lower in spring and higher in autumn. Since 2020 it has mostly been the other way round. Over the whole period, no month averages more than about 1% above or below the 12-month average, and every month was above average in roughly half the years. So it isn't a pattern to plan around.</p>
+            <p class="source-line">Source: <a href="https://ahdb.org.uk/beef/gb-deadweight-cattle-prices">AHDB, GB deadweight cattle prices (monthly)</a>. Worked out by this site in October 2026.</p>
+          </div>
+
+          <div id="season-content">
+            <h3>Compare the same months across years</h3>
+            <p class="note">Pick some months and see their average price in each year, for the stock, area and time range chosen above. This shows what happened each year; it doesn't predict a pattern.</p>
+            <div class="season-grade" data-for="finished">
+              <label for="season-grade">Grade</label>
+              <select id="season-grade"></select>
+            </div>
+            <div class="period-picker">
+              <div>
+                <label for="period-start">From</label>
+                <select id="period-start"></select>
+              </div>
+              <div>
+                <label for="period-end">To</label>
+                <select id="period-end"></select>
+              </div>
+            </div>
+            <div class="chart-box short">
+              <canvas id="period-chart" aria-label="Bar chart of the chosen months' average price in each year"></canvas>
+            </div>
+            <div class="summary" id="period-summary"></div>
           </div>
           <div class="unavailable not-enough" id="season-unavailable" hidden></div>
-          <div id="season-content">
-            <h3>This year compared with last year</h3>
-            <div class="toggle" role="group" aria-label="Years shown">
-              <button type="button" data-set="allYears" data-value="no">This year and last year</button>
-              <button type="button" data-set="allYears" data-value="yes">All years</button>
-            </div>
-            <div class="chart-box">
-              <canvas id="overlay-chart" aria-label="Chart of this year and last year, January to December"></canvas>
-            </div>
-            <div class="summary" id="overlay-summary"></div>
-
-            <div class="season-pair">
-              <div>
-                <h3>Usual pattern through the year</h3>
-                <p class="note">How far each month usually sits above or below the 12-month average around it. This takes out long-term rises and falls, so it shows only the pattern through the year.</p>
-                <div class="chart-box short">
-                  <canvas id="month-chart" aria-label="Bar chart of how each month compares with the yearly average"></canvas>
-                </div>
-                <div class="summary" id="month-summary"></div>
-              </div>
-
-              <div>
-                <h3>Compare periods</h3>
-                <p class="note">Pick a period and see its average price in each year.</p>
-                <div class="period-picker">
-                  <div>
-                    <label for="period-start">From</label>
-                    <select id="period-start"></select>
-                  </div>
-                  <div>
-                    <label for="period-end">To</label>
-                    <select id="period-end"></select>
-                  </div>
-                </div>
-                <div class="chart-box short">
-                  <canvas id="period-chart" aria-label="Bar chart of the chosen period's average price in each year"></canvas>
-                </div>
-                <div class="summary" id="period-summary"></div>
-              </div>
-            </div>
-          </div>
           <p class="source-line" id="season-source"></p>
         </section>
 

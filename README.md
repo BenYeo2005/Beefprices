@@ -58,7 +58,7 @@ All the words on the Outlook page live in `data/outlook.json`. Each month:
 
 Or just ask Claude: "update the outlook for this month".
 
-The seasonal pattern and the grade gaps on the Outlook page are worked out live from the AHDB files, so they don't need editing.
+The grade gaps on the Outlook page are worked out live from the AHDB files, so they don't need editing. The "no consistent seasonal pattern" note on the History and Outlook pages is fixed text (checked October 2026); see CLAUDE.md.
 
 ## Where the data comes from
 
