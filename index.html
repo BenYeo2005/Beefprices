@@ -24,20 +24,13 @@
 
   <main>
     <h1>Today's prices</h1>
-    <p class="intro">The latest prices for steers and heifers, to help decide whether to sell as stores or keep and finish.</p>
 
     <div class="card-grid">
 
-    <section class="card warning span-2">
-      <h2>Two kinds of "price per kg"</h2>
-      <p><strong>Deadweight</strong> is the price per kg of <em>carcase</em>, paid by the abattoir for finished cattle.</p>
-      <p><strong>Liveweight</strong> is the price per kg of the <em>live animal</em>, paid at auction for stores and calves.</p>
-      <p>A carcase weighs much less than the live animal, so a deadweight price per kg is always much higher than a liveweight one. Don't compare the two directly. Compare the price per head instead.</p>
-    </section>
 
     <!-- Question 1 -->
     <section class="card span-2" id="q-finished">
-      <h2>1. What would finished cattle make?</h2>
+      <h2>Finished deadweight prices</h2>
       <p>Abattoir price per kg of carcase (<strong>deadweight</strong>), steers and heifers.</p>
       <p class="grade-line"><strong>Grades in one line:</strong> R4L is the standard grade that prices are usually quoted for: shape R (average) with fat class 4L (medium fat). O+4L is one shape grade lower (O+) with the same fat. From the farm's own experience (not a published figure), dairy-cross cattle usually grade around O+ to R, and Hereford crosses tend to be fatter (4H).</p>
       <div class="toggle" role="group" aria-label="Choose area">
@@ -57,25 +50,16 @@
 
     <!-- Question 2 -->
     <section class="card span-2" id="q-stores">
-      <h2>2. What would they make as stores?</h2>
-      <p>Auction prices for store cattle, per head and per kg of the live animal (<strong>liveweight</strong>).</p>
-      <div class="unavailable">
-        <p><strong>Not available: Continental cross (Belgian Blue x) and Native cross (Hereford x) prices at about 12 months.</strong></p>
-        <p>Since January 2024, national store prices by breed type and age are only sold by the Livestock Auctioneers' Association (LAA), and its terms don't allow them to be shared. Hereford Market's reports give one average for all steers and one for all heifers, not by breed or age.</p>
-      </div>
-      <p class="label">What we do have: Hereford Market sale averages</p>
+      <h2>Store liveweight prices</h2>
+      <p>Auction prices for store cattle, per head and per kg of the live animal (<strong>liveweight</strong>). The figures are the sale averages for all store steers and all store heifers at Hereford Market, as printed in Hereford Market Auctioneers' report after each sale.</p>
+      <p class="label">Latest Hereford Market sale averages</p>
       <div id="store-prices"><p class="no-data">Loading prices…</p></div>
       <p class="source-line" id="store-source">Source: Hereford Market sale reports</p>
-      <div class="data-note">
-        <p><strong>Where the liveweight prices come from</strong></p>
-        <p>They come from Hereford Market Auctioneers' store cattle sale reports (Hereford Livestock Market, Roman Road, Hereford), which are published on <a href="https://www.herefordmarket.co.uk/market-reports/">their website</a> after each sale. Each figure is the overall average for all store steers, or all store heifers, exactly as printed in that sale's report, per head and per kg liveweight.</p>
-        <p>The reports on their website go back to 4 December 2025, so that's as far back as these prices go. There has been no free national liveweight price since January 2024, when the auctioneers' national figures became subscription-only.</p>
-      </div>
     </section>
 
     <!-- Question 3 -->
     <section class="card" id="q-calves">
-      <h2>3. What do calves cost to buy?</h2>
+      <h2>What do calves cost to buy?</h2>
       <div class="unavailable">
         <p><strong>Not available: average prices for Belgian Blue x and Hereford x dairy calves on their own.</strong></p>
         <p>Hereford Market's reports give averages for all rearing calves in the sale, all breeds together. Prices for particular breeds are only mentioned as examples in the written report.</p>
